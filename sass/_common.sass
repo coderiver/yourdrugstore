@@ -51,5 +51,339 @@ body
 	font-size: 12px 
 	line-height: 1.4
 
+//FONTS
++font(Titillium-Bold, Titillium-Bold)  
++font(Titillium-Regular, Titillium-Regular) 
++font(Titillium-Semibold, Titillium-Semibold) 
++font(KlinicSlabLight, KlinicSlabLight) 
 
 // common blocks      
+.out
+	min-height: 100%
+	
+//HEADER
+header, section
+	position: relative
+	width: 100% 
+	min-width: 244px
+
+.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap, .footer__wrap
+	max-width: 1000px
+	margin: 0 auto 
+
+.header__wrap
+	max-width: 1244px 
+	min-height: 90px
+	padding-bottom: 10px 
+	margin: 0 auto 
+	+clr
+	
+.header__logo
+	padding-top: 25px 
+	width: 39.3890% 
+	min-width: 244px
+	float: left
+	+rt(685)
+		text-align: center
+		width: 100%
+		float: none 
+	
+.header__right
+	width: 60.6109%
+	float: right
+	+clr
+	+rt(685)
+		float: none
+		width: 100%
+	.contacts
+		font: 16px "Titillium-Bold", Arial, sans-serif 
+		width: 70% 
+		+rt(685)
+			width: 100% 
+		span
+			color: #2a8ff1 
+			display: inline-block
+			padding: 15px 45px 0 0 
+			position: relative
+		.phone	
+			padding-left: 35px
+			+rt(1238)
+				display: none
+			&:after
+				+s(phone_i)
+				position: absolute 
+				content: ""
+				top: 18px 
+				right: 18px
+		.fax
+			&:after
+				+s(fax_i)
+				position: absolute 
+				content: ""
+				top: 19px 
+				right: 17px	
+			+rt(1238)
+				display: none
+		.sign 
+			display: inline-block
+			font: 16px "Titillium-Semibold", Arial, sans-serif
+			color: #254680 
+			+rt(685)
+				width: 100%
+				text-align: center 
+				padding-top: 10px
+		.login, .reg
+			display: inline-block
+			text-decoration: none
+		.login
+			width: 70px 
+			height: 35px
+			background: #2a8ff1 	
+			color: #FFF 		
+			padding-top: 15px
+			font-size: 15px
+			text-transform: uppercase 
+			text-align: center 
+		.reg
+			color: #254680
+			padding-left: 5px 
+		 
+.header__menu
+	font: 16px "Titillium-Regular", Arial, sans-serif
+	padding-top: 15px 
+	float: left
+	+rt(685)
+		float: none
+		text-align: center 
+	ul
+		float: left
+		+rt(685)
+			float: none
+	li
+		display: inline-block
+		padding-right: 33px
+		+rt(685)
+			display: block 
+			padding-right: 0 
+		a
+			color: #254680 
+			text-decoration: none 
+		&:hover
+			text-decoration: underline 	
+	.social
+		float: left
+		+rt(685)
+			float: none
+			padding: 20px 0	
+.search 
+	float: right
+	margin-top: 10px 
+	position: relative
+	input
+		width: 213px 
+		height: 30px
+		background: #eff0f1
+		padding-left: 15px   
+	i
+		+s(search_i)
+		position: absolute
+		right: 12px
+		top: 8px
+		content: ""
+	+rt(1247)
+		float: left	
+	+rt(685)
+		float: none
+		width: 90%
+		margin: 5px auto 
+		input
+			width: 100%
+			+box 
+//MAIN
+.slider
+	background: url(../img/main_bg.jpg) no-repeat
+	background-size: cover
+	height: 578px 
+	
+.pharm__wrap
+	margin: 50px auto 15px
+	position: relative
+	&:before
+		+s(logo2)
+		position: absolute
+		content: ""
+		top: 0
+		left: 50%
+		margin-left: -18px 
+	p
+		font: 29px "KlinicSlabLight", Arial, sans-serif 
+		color: #254680 
+		text-align: center 
+	
+.pharm__text	
+	padding: 115px 0 50px 0 
+	width: 65%
+	margin: 0 auto  
+	
+.pharm__buttons
+	text-align: center
+	padding-bottom: 70px 
+	button
+		width: 234px
+		height: 55px 
+		font: 16px "Titillium-Semibold", Arial, sans-serif 		
+		text-transform: uppercase 
+		border: 2px solid #254680
+		background: #fff 
+		color: #254680 
+		margin-right: 30px 
+		+box 
+		+rt(518)
+			margin: 0 0 20px 0
+		&:last-child
+			margin-right: 0 
+		&:hover
+			background: #254680 
+			color: #fff 
+			
+.scroll
+	font: 14px "Titillium-Semibold", Arial, sans-serif 
+	color: #2a8ff1 
+	text-align: center 
+	position: relative
+	padding-bottom: 40px 
+	&:after
+		+s(scroll_i)
+		position: absolute
+		content: ""		
+		top: 30px
+		left: 50%
+		margin-left: -9.5px
+
+.medic
+	background: #2a8ff1
+	
+.medic__wrap
+	padding: 85px 0 75px 0
+	p
+		margin-bottom: 60px
+		color: #fff 
+		font: 29px "KlinicSlabLight", Arial, sans-serif 
+		text-align: center 
+		 
+.medic__table
+	text-align: center 
+	.bl
+		display: inline-block
+		width: 17%
+		margin-bottom: 30px
+		+rt(680)
+			width: 20%
+		+rt(580)
+			width: 25%
+		+rt(470)
+			width: 50%
+		a
+			text-decoration: none 			
+			display: block
+			background: #FFF
+			border-radius: 50% 
+			margin: 0 auto 
+			width: 100px
+			height: 100px		
+			img
+				padding-top: 30px					
+		span
+			display: block
+			padding-top: 20px
+			font: 14px "Titillium-Semibold", Arial, sans-serif 
+			color: #FFF 			 
+			text-transform: uppercase 
+
+
+.prodsearch
+	background: #F8F8F8 
+
+.prodsearch__wrap
+	padding: 105px 0 130px 0
+	text-align: center 
+	a
+		display: block
+		font: 13px "Titillium-Regular", Arial, sans-serif
+		color: #134A8E
+		text-decoration: none  
+			
+.prodsearch__s
+	position: relative
+	display: inline-block
+	width: 45%
+	min-width: 370px
+	padding-bottom: 20px 
+	input
+		color: #5b5b5b
+		background: #FFF
+		width: 100%
+		height: 55px  
+		padding-left: 37px		
+		font: 16px "Titillium-Regular", Arial, sans-serif 
+		+placeholder-color(#5b5b5b) 
+		+box
+	i
+		+s(arrow)
+		position: absolute
+		content: ""
+		top: 15px
+		right: 20px
+		cursor: pointer
+	
+.prodsearch__title
+	font: 24px "KlinicSlabLight", Arial, sans-serif 
+	color: #2A8FF1
+	padding-bottom: 35px 
+	
+.categ
+	background: #2a8ff1
+	
+.categ__wrap
+	padding: 70px 0 100px 0 
+	text-align: center 
+	.medic__table
+		.bl
+			width: 22.5% 
+			+rt(600)
+				width: 25%
+			+rt(520)
+				width: 35%
+			+rt(470)
+				width: 50%
+		a
+			img
+				padding-top: 20px 
+	.prodsearch__title
+		color: #FFF 
+		padding-bottom: 60px 
+
+//FOOTER
+footer
+	background: #134a8e
+	
+.footer__menu
+	font: 13px Helvetica, Arial, sans-serif
+	padding: 35px 0 25px 0 
+	ul
+		display: inline-block
+		width: 17% 
+	li
+		padding-bottom: 15px 
+		a
+			color: #fff  
+			text-decoration: none 
+			
+.footer__social
+	vertical-align: top 
+			
+.footer__badge
+	background: #FFF 
+	padding: 15px 0 
+	img
+		padding-right: 15px 
