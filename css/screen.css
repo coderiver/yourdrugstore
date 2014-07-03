@@ -33,7 +33,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 header, section, footer { position: relative; width: 100%; min-width: 244px; }
 
-.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap { max-width: 1000px; margin: 0 auto; }
+.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap { max-width: 1000px; margin: 0 auto; min-height: 100%; }
 
 .header__wrap { max-width: 1244px; min-height: 90px; padding-bottom: 10px; margin: 0 auto; *zoom: 1; }
 .header__wrap:after { content: " "; display: table; clear: both; }
@@ -71,7 +71,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 
 .search { float: right; margin-top: 10px; position: relative; }
 .search input { width: 213px; height: 30px; background: #eff0f1; padding-left: 15px; }
-.search i { background: url('../img/icons-s907394ad67.png') 0 -149px no-repeat; width: 15px; height: 15px; position: absolute; right: 12px; top: 8px; content: ""; }
+.search i { background: url('../img/icons-s907394ad67.png') 0 -149px no-repeat; width: 15px; height: 15px; position: absolute; right: 12px; top: 8px; content: ""; cursor: pointer; }
 @media only screen and (max-width: 1247px) { .search { float: left; } }
 @media only screen and (max-width: 685px) { .search { float: none; width: 90%; margin: 5px auto; }
   .search input { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } }
@@ -141,6 +141,21 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 @media only screen and (max-width: 470px) { .categ__wrap .medic__table .bl { width: 50%; } }
 .categ__wrap .medic__table a img { padding-top: 20px; }
 .categ__wrap .prodsearch__title { color: white; padding-bottom: 60px; }
+
+.sign { text-align: center; font: 15px "Titillium-Regular", Arial, sans-serif; }
+.sign p { margin-bottom: 0; font-size: 24px; }
+.sign .sign__text { margin-bottom: 60px; }
+.sign input { display: block; margin: 0 auto 10px; width: 31.5%; min-width: 200px; height: 50px; font-size: 16px; color: #5b5b5b; padding-left: 25px; }
+.sign input:-moz-placeholder, .sign input::-moz-placeholder { color: #5b5b5b; opacity: 1; }
+.sign input::-webkit-input-placeholder { color: #5b5b5b; }
+.sign a { color: white; display: block; }
+.sign a:hover { text-decoration: none; }
+.sign span { color: white; display: inline-block; }
+.sign .ask { margin-top: 40px; }
+.sign .frgt { padding-bottom: 45px; font-size: 12px; }
+
+.signin { width: 235px; height: 55px; background: none; border: 2px solid white; text-transform: uppercase; color: white; display: block; margin: 0 auto; }
+.signin:hover { background: #254680; border-color: #254680; }
 
 footer { background: #134a8e; }
 

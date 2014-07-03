@@ -70,6 +70,7 @@ header, section, footer
 .pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap
 	max-width: 1000px
 	margin: 0 auto 
+	min-height: 100%	
 
 .header__wrap
 	max-width: 1244px 
@@ -190,6 +191,7 @@ header, section, footer
 		right: 12px
 		top: 8px
 		content: ""
+		cursor: pointer
 	+rt(1247)
 		float: left	
 	+rt(685)
@@ -395,6 +397,53 @@ header, section, footer
 	.prodsearch__title
 		color: #FFF 
 		padding-bottom: 60px 
+
+//PAGE SIGN IN
+.sign
+	text-align: center 
+	font: 15px "Titillium-Regular", Arial, sans-serif
+	p
+		margin-bottom: 0 
+		font-size: 24px 
+	.sign__text
+		margin-bottom: 60px 
+	input
+		display: block
+		margin: 0 auto 10px
+		width: 31.5%
+		min-width: 200px 
+		height: 50px
+		font-size: 16px
+		color: #5b5b5b
+		padding-left: 25px  
+		+placeholder-color(#5b5b5b)
+	a
+		color: #FFF 	
+		display: block 
+		&:hover
+			text-decoration: none 
+	span			
+		color: #FFF 
+		display: inline-block
+	.ask
+		margin-top: 40px 	
+	.frgt
+		padding-bottom: 45px 
+		font-size: 12px 
+
+.signin
+	width: 235px
+	height: 55px
+	background: none
+	border: 2px solid #fff
+	text-transform: uppercase  
+	color: #fff 
+	display: block 
+	margin: 0 auto 
+	&:hover
+		background: #254680 
+		border-color: #254680 
+
 
 //FOOTER
 footer
