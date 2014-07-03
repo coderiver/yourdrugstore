@@ -31,9 +31,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .out { min-height: 100%; }
 
-header, section { position: relative; width: 100%; min-width: 244px; }
+header, section, footer { position: relative; width: 100%; min-width: 244px; }
 
-.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap, .footer__wrap { max-width: 1000px; margin: 0 auto; }
+.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap { max-width: 1000px; margin: 0 auto; }
 
 .header__wrap { max-width: 1244px; min-height: 90px; padding-bottom: 10px; margin: 0 auto; *zoom: 1; }
 .header__wrap:after { content: " "; display: table; clear: both; }
@@ -76,7 +76,17 @@ header, section { position: relative; width: 100%; min-width: 244px; }
 @media only screen and (max-width: 685px) { .search { float: none; width: 90%; margin: 5px auto; }
   .search input { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } }
 
-.slider { background: url(../img/main_bg.jpg) no-repeat; background-size: cover; height: 578px; }
+.cycle-slideshow { overflow: hidden; max-height: 575px; }
+.cycle-slideshow a, .cycle-slideshow img { width: 100%; }
+
+.cycle-pager { position: absolute; z-index: 500; bottom: -15px; left: 50%; margin-left: -35px; }
+@media only screen and (max-width: 1120px) { .cycle-pager { margin-left: -32px; } }
+@media only screen and (max-width: 720px) { .cycle-pager { margin-left: -25px; bottom: -10px; } }
+.cycle-pager .cycle-pager-active { color: #2a8ff0; }
+
+.cycle-pager span { color: white; font-size: 50px; cursor: pointer; padding-right: 7px; }
+@media only screen and (max-width: 1120px) { .cycle-pager span { font-size: 45px; } }
+@media only screen and (max-width: 720px) { .cycle-pager span { font-size: 35px; } }
 
 .pharm__wrap { margin: 50px auto 15px; position: relative; }
 .pharm__wrap:before { background: url('../img/icons-s907394ad67.png') 0 0 no-repeat; width: 36px; height: 75px; position: absolute; content: ""; top: 0; left: 50%; margin-left: -18px; }
@@ -113,9 +123,11 @@ header, section { position: relative; width: 100%; min-width: 244px; }
 .prodsearch__wrap a { display: block; font: 13px "Titillium-Regular", Arial, sans-serif; color: #134a8e; text-decoration: none; }
 
 .prodsearch__s { position: relative; display: inline-block; width: 45%; min-width: 370px; padding-bottom: 20px; }
+@media only screen and (max-width: 685px) { .prodsearch__s { width: 90%; min-width: 265px; } }
 .prodsearch__s input { color: #5b5b5b; background: white; width: 100%; height: 55px; padding-left: 37px; font: 16px "Titillium-Regular", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .prodsearch__s input:-moz-placeholder, .prodsearch__s input::-moz-placeholder { color: #5b5b5b; opacity: 1; }
 .prodsearch__s input::-webkit-input-placeholder { color: #5b5b5b; }
+@media only screen and (max-width: 685px) { .prodsearch__s input { width: 100%; padding-left: 10px; font-size: 12px; } }
 .prodsearch__s i { background: url('../img/icons-s907394ad67.png') 0 -85px no-repeat; width: 26px; height: 26px; position: absolute; content: ""; top: 15px; right: 20px; cursor: pointer; }
 
 .prodsearch__title { font: 24px "KlinicSlabLight", Arial, sans-serif; color: #2a8ff1; padding-bottom: 35px; }
@@ -132,14 +144,19 @@ header, section { position: relative; width: 100%; min-width: 244px; }
 
 footer { background: #134a8e; }
 
+.footer__wrap { max-width: 795px; margin: 0 auto; }
+
 .footer__menu { font: 13px Helvetica, Arial, sans-serif; padding: 35px 0 25px 0; }
-.footer__menu ul { display: inline-block; width: 17%; }
+.footer__menu ul { display: inline-block; width: 23%; }
+@media only screen and (max-width: 545px) { .footer__menu ul { display: inline; text-align: center; } }
 .footer__menu li { padding-bottom: 15px; }
 .footer__menu li a { color: white; text-decoration: none; }
+.footer__menu li a:hover { text-decoration: underline; }
 
 .footer__social { vertical-align: top; }
 
 .footer__badge { background: white; padding: 15px 0; }
+@media only screen and (max-width: 545px) { .footer__badge { text-align: center; } }
 .footer__badge img { padding-right: 15px; }
 
 .l { *zoom: 1; }

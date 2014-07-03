@@ -62,12 +62,12 @@ body
 	min-height: 100%
 	
 //HEADER
-header, section
+header, section, footer
 	position: relative
 	width: 100% 
 	min-width: 244px
 
-.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap, .footer__wrap
+.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap
 	max-width: 1000px
 	margin: 0 auto 
 
@@ -200,11 +200,37 @@ header, section
 			width: 100%
 			+box 
 //MAIN
-.slider
-	background: url(../img/main_bg.jpg) no-repeat
-	background-size: cover
-	height: 578px 
+.cycle-slideshow
+	overflow: hidden
+	max-height: 575px
+	a,img
+		width: 100%
+		
+.cycle-pager
+	position: absolute
+	z-index: 500
+	bottom: -15px
+	left: 50%
+	margin-left: -35px 
+	+rt(1120)
+		margin-left: -32px
+	+rt(720)
+		margin-left: -25px
+		bottom: -10px 
+	.cycle-pager-active
+		color: #2a8ff0
 	
+.cycle-pager span
+	color: #fff
+	font-size: 50px
+	cursor: pointer
+	padding-right: 7px 
+	+rt(1120)
+		font-size: 45px 
+	+rt(720)
+		font-size: 35px 
+	
+	 
 .pharm__wrap
 	margin: 50px auto 15px
 	position: relative
@@ -319,6 +345,9 @@ header, section
 	width: 45%
 	min-width: 370px
 	padding-bottom: 20px 
+	+rt(685)
+		width: 90% 
+		min-width: 265px 
 	input
 		color: #5b5b5b
 		background: #FFF
@@ -328,6 +357,10 @@ header, section
 		font: 16px "Titillium-Regular", Arial, sans-serif 
 		+placeholder-color(#5b5b5b) 
 		+box
+		+rt(685)
+			width: 100% 
+			padding-left: 10px
+			font-size: 12px  
 	i
 		+s(arrow)
 		position: absolute
@@ -366,18 +399,27 @@ header, section
 //FOOTER
 footer
 	background: #134a8e
+
+.footer__wrap
+	max-width: 795px
+	margin: 0 auto 
 	
 .footer__menu
 	font: 13px Helvetica, Arial, sans-serif
 	padding: 35px 0 25px 0 
 	ul
 		display: inline-block
-		width: 17% 
+		width: 23% 
+		+rt(545)
+			display: inline 
+			text-align: center 
 	li
 		padding-bottom: 15px 
 		a
 			color: #fff  
 			text-decoration: none 
+			&:hover
+				text-decoration: underline 	
 			
 .footer__social
 	vertical-align: top 
@@ -385,5 +427,7 @@ footer
 .footer__badge
 	background: #FFF 
 	padding: 15px 0 
+	+rt(545)
+		text-align: center 
 	img
 		padding-right: 15px 
