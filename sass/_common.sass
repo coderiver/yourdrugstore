@@ -375,6 +375,55 @@ header, section, footer
 	font: 24px "KlinicSlabLight", Arial, sans-serif 
 	color: #2A8FF1
 	padding-bottom: 35px 
+
+.prodsearch__sort
+	margin-top: 25px  
+	font: 12px "Titillium-Regular", Arial, sans-serif 
+	color: #134a8e
+	input
+		margin-right: 5px 
+		opacity: 0
+		z-index: 3
+		&:checked
+			+ .checkn
+				&:after
+					display: inline-block
+					
+.check
+	position: relative
+	display: inline-block
+	cursor: pointer
+	+rt(357)
+		margin-bottom: 15px 
+
+.middle
+	margin: 0 65px 0 
+	+rt(470)
+		margin: 0 20px 
+	+rt(357)
+		margin-bottom: 15px 
+.first
+	margin-right: 80px
+	+rt(470)
+		margin: 0 20px 
+	+rt(357)
+		margin-bottom: 15px 
+
+.checkn
+	&:before
+		position: absolute
+		content: ""
+		width: 12px 
+		height: 12px
+		border: 1px solid #6e86ae
+		left: 0
+	&:after
+		position: absolute
+		content: ""
+		left: 0
+		display: none
+		z-index: 2
+		+s(checkn)	
 	
 .categ
 	background: #2a8ff1
@@ -397,7 +446,9 @@ header, section, footer
 	.prodsearch__title
 		color: #FFF 
 		padding-bottom: 60px 
-
+		
+.srch
+	padding-bottom: 312px 
 //PAGE SIGN IN
 .sign
 	text-align: center 
