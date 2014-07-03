@@ -154,8 +154,12 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 .sign .ask { margin-top: 40px; }
 .sign .frgt { padding-bottom: 45px; font-size: 12px; }
 
-.signin { width: 235px; height: 55px; background: none; border: 2px solid white; text-transform: uppercase; color: white; display: block; margin: 0 auto; }
+.signin { width: 23.5%; min-width: 195px; height: 55px; background: none; border: 2px solid white; text-transform: uppercase; color: white; display: block; margin: 0 auto; }
 .signin:hover { background: #254680; border-color: #254680; }
+
+.acc .sign__text { margin-bottom: 40px; }
+.acc input { display: inline-block; margin-right: 10px; }
+.acc .signin { margin-top: 40px; }
 
 footer { background: #134a8e; }
 
