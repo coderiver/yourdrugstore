@@ -52,9 +52,10 @@ body
 	line-height: 1.4
 
 //FONTS
-+font(Titillium-Bold, Titillium-Bold)  
++font(Titillium-Bold, Titillium-Bold) 
++font(Titillium-Semibold, Titillium-Semibold)  
 +font(Titillium-Regular, Titillium-Regular) 
-+font(Titillium-Semibold, Titillium-Semibold) 
++font(Titillium-Light, Titillium-Light) 
 +font(KlinicSlabLight, KlinicSlabLight) 
 
 // common blocks      
@@ -67,7 +68,7 @@ header, section, footer
 	width: 100% 
 	min-width: 244px
 
-.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap
+.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap, .result__wrap
 	max-width: 1000px
 	margin: 0 auto 
 	min-height: 100%	
@@ -201,6 +202,7 @@ header, section, footer
 		input
 			width: 100%
 			+box 
+
 //MAIN
 .cycle-slideshow
 	overflow: hidden
@@ -230,8 +232,7 @@ header, section, footer
 	+rt(1120)
 		font-size: 45px 
 	+rt(720)
-		font-size: 35px 
-	
+		font-size: 35px 	
 	 
 .pharm__wrap
 	margin: 50px auto 15px
@@ -449,6 +450,7 @@ header, section, footer
 		
 .srch
 	padding-bottom: 312px 
+	
 //PAGE SIGN IN
 .sign
 	text-align: center 
@@ -505,6 +507,68 @@ header, section, footer
 		margin-right: 10px 
 	.signin
 		margin-top: 40px 
+
+//PAGE SEARCH RESULTS
+.result__wrap
+	margin: 85px auto 165px
+
+.result__title	
+	font: 24px "KlinicSlabLight", Arial, sans-serif
+	color: #2A8FF1 
+	margin-bottom: 50px 
+
+.result__table
+	font: 17px "Titillium-Regular", Arial, sans-serif
+	color: #555 
+	+rt(730)
+		font-size: 13px
+	tr
+		border-bottom: 1px solid #dddddd
+	td
+		padding: 30px 0
+		+rt(730)
+			padding-right: 15px 
+	.result__first td
+		padding: 0 0 5px 0
+	.name
+		width: 33%
+		padding-left: 20px	
+		+rt(860)
+			width: 40%
+			padding-right: 20px 
+	.best
+		position: relative
+		.deal
+			font: 12px "Titillium-Light", Arial, sans-serif	
+			position: absolute
+			left: -2px
+			bottom: -20px	
+			+rt(730)
+				display: none		
+	.blue, .srt, a, .deal
+		color: #254680 	
+	.srt
+		position: relative
+		cursor: pointer
+		i
+			position: absolute
+			content: ""
+			+s(arr_down)
+			top: 10px	
+			right: -14px
+			+rt(730)
+				top: 7px
+			&.active
+				position: absolute
+				content: ""
+				+s(arr_up)
+				top: 10px	
+				right: -14px
+				+rt(730)
+					top: 7px
+	a	
+		&:hover
+			text-decoration: none 
 
 //FOOTER
 footer

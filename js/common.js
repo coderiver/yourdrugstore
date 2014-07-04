@@ -1,8 +1,7 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+	$('.srt').click( function(){
+		$(this).children().toggleClass('active');
+	});
 
-	console.log($('body').html());
 });

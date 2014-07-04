@@ -23,9 +23,11 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 @font-face { font-family: Titillium-Bold; src: url("fonts/Titillium-Bold.eot"); src: url("fonts/Titillium-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Titillium-Bold.woff") format("woff"), url("fonts/Titillium-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: Titillium-Semibold; src: url("fonts/Titillium-Semibold.eot"); src: url("fonts/Titillium-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/Titillium-Semibold.woff") format("woff"), url("fonts/Titillium-Semibold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 @font-face { font-family: Titillium-Regular; src: url("fonts/Titillium-Regular.eot"); src: url("fonts/Titillium-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Titillium-Regular.woff") format("woff"), url("fonts/Titillium-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: Titillium-Semibold; src: url("fonts/Titillium-Semibold.eot"); src: url("fonts/Titillium-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/Titillium-Semibold.woff") format("woff"), url("fonts/Titillium-Semibold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Titillium-Light; src: url("fonts/Titillium-Light.eot"); src: url("fonts/Titillium-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Titillium-Light.woff") format("woff"), url("fonts/Titillium-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: KlinicSlabLight; src: url("fonts/KlinicSlabLight.eot"); src: url("fonts/KlinicSlabLight.eot?#iefix") format("embedded-opentype"), url("fonts/KlinicSlabLight.woff") format("woff"), url("fonts/KlinicSlabLight.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
@@ -33,7 +35,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 header, section, footer { position: relative; width: 100%; min-width: 244px; }
 
-.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap { max-width: 1000px; margin: 0 auto; min-height: 100%; }
+.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap, .result__wrap { max-width: 1000px; margin: 0 auto; min-height: 100%; }
 
 .header__wrap { max-width: 1244px; min-height: 90px; padding-bottom: 10px; margin: 0 auto; *zoom: 1; }
 .header__wrap:after { content: " "; display: table; clear: both; }
@@ -49,8 +51,8 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 .header__right .contacts span { color: #2a8ff1; display: inline-block; padding: 15px 45px 0 0; position: relative; }
 .header__right .contacts .phone { padding-left: 35px; }
 @media only screen and (max-width: 1238px) { .header__right .contacts .phone { display: none; } }
-.header__right .contacts .phone:after { background: url('../img/icons-sa0c17fc010.png') 0 -142px no-repeat; width: 18px; height: 18px; position: absolute; content: ""; top: 18px; right: 18px; }
-.header__right .contacts .fax:after { background: url('../img/icons-sa0c17fc010.png') 0 -195px no-repeat; width: 19px; height: 17px; position: absolute; content: ""; top: 19px; right: 17px; }
+.header__right .contacts .phone:after { background: url('../img/icons-se7d944eb9b.png') 0 -142px no-repeat; width: 18px; height: 18px; position: absolute; content: ""; top: 18px; right: 18px; }
+.header__right .contacts .fax:after { background: url('../img/icons-se7d944eb9b.png') 0 -195px no-repeat; width: 19px; height: 17px; position: absolute; content: ""; top: 19px; right: 17px; }
 @media only screen and (max-width: 1238px) { .header__right .contacts .fax { display: none; } }
 .header__right .contacts .sign { display: inline-block; font: 16px "Titillium-Semibold", Arial, sans-serif; color: #254680; }
 @media only screen and (max-width: 685px) { .header__right .contacts .sign { width: 100%; text-align: center; padding-top: 10px; } }
@@ -71,7 +73,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 
 .search { float: right; margin-top: 10px; position: relative; }
 .search input { width: 213px; height: 30px; background: #eff0f1; padding-left: 15px; }
-.search i { background: url('../img/icons-sa0c17fc010.png') 0 -170px no-repeat; width: 15px; height: 15px; position: absolute; right: 12px; top: 8px; content: ""; cursor: pointer; }
+.search i { background: url('../img/icons-se7d944eb9b.png') 0 -170px no-repeat; width: 15px; height: 15px; position: absolute; right: 12px; top: 8px; content: ""; cursor: pointer; }
 @media only screen and (max-width: 1247px) { .search { float: left; } }
 @media only screen and (max-width: 685px) { .search { float: none; width: 90%; margin: 5px auto; }
   .search input { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } }
@@ -89,7 +91,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 @media only screen and (max-width: 720px) { .cycle-pager span { font-size: 35px; } }
 
 .pharm__wrap { margin: 50px auto 15px; position: relative; }
-.pharm__wrap:before { background: url('../img/icons-sa0c17fc010.png') 0 0 no-repeat; width: 36px; height: 75px; position: absolute; content: ""; top: 0; left: 50%; margin-left: -18px; }
+.pharm__wrap:before { background: url('../img/icons-se7d944eb9b.png') 0 0 no-repeat; width: 36px; height: 75px; position: absolute; content: ""; top: 0; left: 50%; margin-left: -18px; }
 .pharm__wrap p { font: 29px "KlinicSlabLight", Arial, sans-serif; color: #254680; text-align: center; }
 
 .pharm__text { padding: 115px 0 50px 0; width: 65%; margin: 0 auto; }
@@ -101,7 +103,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 .pharm__buttons button:hover { background: #254680; color: white; }
 
 .scroll { font: 14px "Titillium-Semibold", Arial, sans-serif; color: #2a8ff1; text-align: center; position: relative; padding-bottom: 40px; }
-.scroll:after { background: url('../img/icons-sa0c17fc010.png') 0 -222px no-repeat; width: 19px; height: 9px; position: absolute; content: ""; top: 30px; left: 50%; margin-left: -9.5px; }
+.scroll:after { background: url('../img/icons-se7d944eb9b.png') 0 -222px no-repeat; width: 19px; height: 9px; position: absolute; content: ""; top: 30px; left: 50%; margin-left: -9.5px; }
 
 .medic { background: #2a8ff1; }
 
@@ -128,7 +130,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 .prodsearch__s input:-moz-placeholder, .prodsearch__s input::-moz-placeholder { color: #5b5b5b; opacity: 1; }
 .prodsearch__s input::-webkit-input-placeholder { color: #5b5b5b; }
 @media only screen and (max-width: 685px) { .prodsearch__s input { width: 100%; padding-left: 10px; font-size: 12px; } }
-.prodsearch__s i { background: url('../img/icons-sa0c17fc010.png') 0 -85px no-repeat; width: 26px; height: 26px; position: absolute; content: ""; top: 15px; right: 20px; cursor: pointer; }
+.prodsearch__s i { background: url('../img/icons-se7d944eb9b.png') 0 -85px no-repeat; width: 26px; height: 26px; position: absolute; content: ""; top: 15px; right: 20px; cursor: pointer; }
 
 .prodsearch__title { font: 24px "KlinicSlabLight", Arial, sans-serif; color: #2a8ff1; padding-bottom: 35px; }
 
@@ -148,7 +150,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 @media only screen and (max-width: 357px) { .first { margin-bottom: 15px; } }
 
 .checkn:before { position: absolute; content: ""; width: 12px; height: 12px; border: 1px solid #6e86ae; left: 0; }
-.checkn:after { position: absolute; content: ""; left: 0; display: none; z-index: 2; background: url('../img/icons-sa0c17fc010.png') 0 -121px no-repeat; width: 12px; height: 11px; }
+.checkn:after { position: absolute; content: ""; left: 0; display: none; z-index: 2; background: url('../img/icons-se7d944eb9b.png') 0 -121px no-repeat; width: 12px; height: 11px; }
 
 .categ { background: #2a8ff1; }
 
@@ -180,6 +182,29 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 .acc .sign__text { margin-bottom: 40px; }
 .acc input { display: inline-block; margin-right: 10px; }
 .acc .signin { margin-top: 40px; }
+
+.result__wrap { margin: 85px auto 165px; }
+
+.result__title { font: 24px "KlinicSlabLight", Arial, sans-serif; color: #2a8ff1; margin-bottom: 50px; }
+
+.result__table { font: 17px "Titillium-Regular", Arial, sans-serif; color: #555555; }
+@media only screen and (max-width: 730px) { .result__table { font-size: 13px; } }
+.result__table tr { border-bottom: 1px solid #dddddd; }
+.result__table td { padding: 30px 0; }
+@media only screen and (max-width: 730px) { .result__table td { padding-right: 15px; } }
+.result__table .result__first td { padding: 0 0 5px 0; }
+.result__table .name { width: 33%; padding-left: 20px; }
+@media only screen and (max-width: 860px) { .result__table .name { width: 40%; padding-right: 20px; } }
+.result__table .best { position: relative; }
+.result__table .best .deal { font: 12px "Titillium-Light", Arial, sans-serif; position: absolute; left: -2px; bottom: -20px; }
+@media only screen and (max-width: 730px) { .result__table .best .deal { display: none; } }
+.result__table .blue, .result__table .srt, .result__table a, .result__table .deal { color: #254680; }
+.result__table .srt { position: relative; cursor: pointer; }
+.result__table .srt i { position: absolute; content: ""; background: url('../img/icons-se7d944eb9b.png') 0 -271px no-repeat; width: 9px; height: 5px; top: 10px; right: -14px; }
+@media only screen and (max-width: 730px) { .result__table .srt i { top: 7px; } }
+.result__table .srt i.active { position: absolute; content: ""; background: url('../img/icons-se7d944eb9b.png') 0 -286px no-repeat; width: 9px; height: 5px; top: 10px; right: -14px; }
+@media only screen and (max-width: 730px) { .result__table .srt i.active { top: 7px; } }
+.result__table a:hover { text-decoration: none; }
 
 footer { background: #134a8e; }
 
