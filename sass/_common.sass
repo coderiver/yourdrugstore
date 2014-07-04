@@ -68,7 +68,8 @@ header, section, footer
 	width: 100% 
 	min-width: 244px
 
-.pharm__wrap, .medic__wrap, .prodsearch__wrap, .categ__wrap, .result__wrap
+.pharm__wrap, .medic__wrap, .prodsearch__wrap, 
+.categ__wrap, .result__wrap, .details__wrap
 	max-width: 1000px
 	margin: 0 auto 
 	min-height: 100%	
@@ -97,6 +98,21 @@ header, section, footer
 	+rt(685)
 		float: none
 		width: 100%
+	.cart
+		float: left
+		width: 68.8%
+		text-align: right
+		padding-top: 18px
+		a
+			color: #2a8ff1
+			font: 14px "Titillium-Semibold", Arial, sans-serif
+			text-decoration: none 
+		+rt(1238)
+			text-align: left 
+		+rt(685)
+			float: none
+			text-align: center 
+			width: 100% 
 	.contacts
 		font: 16px "Titillium-Bold", Arial, sans-serif 
 		width: 70% 
@@ -107,6 +123,10 @@ header, section, footer
 			display: inline-block
 			padding: 15px 45px 0 0 
 			position: relative
+		&.ord
+			width: 31.2%
+			text-align: center
+			float: right
 		.phone	
 			padding-left: 35px
 			+rt(1238)
@@ -117,6 +137,10 @@ header, section, footer
 				content: ""
 				top: 18px 
 				right: 18px
+			&.ord
+				padding: 15px 0 0 0
+				&:after
+					display: none					
 		.fax
 			&:after
 				+s(fax_i)
@@ -544,7 +568,9 @@ header, section, footer
 			left: -2px
 			bottom: -20px	
 			+rt(730)
-				display: none		
+				display: none	
+	.remove
+		cursor: pointer				
 	.blue, .srt, a, .deal
 		color: #254680 	
 	.srt
@@ -569,6 +595,97 @@ header, section, footer
 	a	
 		&:hover
 			text-decoration: none 
+	select
+		position: relative 	
+		width: 70px
+		height: 40px
+		z-index: 2	
+		opacity: 0 
+	.forselect
+		position: relative 	
+		span
+			font: 16px "Titillium-Regular", Arial, sans-serif
+			border: 1px solid #254680
+			width: 70px
+			height: 40px
+			display: inline-block 
+			position: absolute
+			top: -41px
+			left: -1px
+			padding: 7px 0 0 20px
+			+box
+			&:after
+				+s(slct)
+				position: absolute
+				content: ""
+				top: 15px
+				right: 10px
+				
+//PAGE ORDER DETAILS
+.common
+	max-width: 1244px
+	margin: 0 auto
+
+.details__wrap
+	margin: 30px 0 120px 0
+	font: 18px "Titillium-Regular", Arial, sans-serif
+	color: #555 
+
+.details__title
+	color: #254680
+	border-bottom: 1px solid #bdc7d9  
+	border-top: 1px solid #bdc7d9 
+	padding: 30px 0 
+	margin-bottom: 85px 
+	+rt(685)
+		text-align: center
+
+.details__total
+	+clr
+	table
+		width: 350px
+		text-align: right
+		float: right
+		margin: 40px 0
+		font-size: 17px 
+		+rt(730)
+			font-size: 15px
+		+rt(505)
+			float: none
+			margin: 40px auto 
+		td
+			padding-right: 20px 
+		.left
+			text-align: left
+			padding-right: 15px 
+		.bold
+			font-family: "Titillium-Semibold", Arial, sans-serif
+			
+.details__buttons
+	border-top: 1px solid #dddddd
+	border-bottom: 1px solid #dddddd
+	padding: 25px 0
+	position: relative
+	+rt(505)
+		text-align: center 
+	button
+		text-transform: uppercase 
+		font: 16px "Titillium-Semibold", Arial, sans-serif
+		width: 235px
+		height: 55px 
+	.back		
+		background: none
+		color: #254680
+		border: 2px solid #254680   	
+	.complete
+		background: #254680
+		color: #fff 
+		position: absolute
+		right: 0
+		+rt(505)
+			position: relative
+			display: inline-block
+			margin-top: 20px
 
 //FOOTER
 footer
