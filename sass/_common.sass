@@ -733,6 +733,8 @@ header, section, footer
 //PRODUCT PAGE
 .product
 	+clr
+	.details__title
+		margin-bottom: 45px 
 
 .breadcrumbs
 	+clr
@@ -759,7 +761,7 @@ header, section, footer
 .alternative
 	margin-top: 100px
 	+rt(685)
-		display: none 
+		display: none		 
 	+clr
 	&.hidden
 		display: none
@@ -767,13 +769,34 @@ header, section, footer
 			display: block 
 			margin-top: 50px 
 			text-align: center
-	img
-		width: 90px 
+	&.version
+		margin-top: 25px 
+		+rt(685)
+			display: block
+			float: none
+			text-align: center 
+	.image
 		float: left
 		margin-right: 10px 
+		overflow: hidden
 		+rt(685)
 			float: none
+		img
+			width: 90px 	
+	.alt__ver
+		float: left
+		width: 33%
+		+rt(930)
+			width: 50%
+		+rt(685)
+			width: 100%
+			margin-bottom: 50px 
+		.add
+			text-decoration: underline 	
+			&:hover
+				text-decoration: none 	
 	.desc
+		+clr
 		padding-top: 25px 	
 	.title
 		margin-bottom: 15px	
@@ -781,6 +804,7 @@ header, section, footer
 	.naming
 		font-size: 30px
 		color: #254680 
+		line-height: 1
 		+kbook 
 	.b
 		color: #2A8FF1 
@@ -824,7 +848,7 @@ header, section, footer
 		background: #254680 
 		font-size: 16px 
 		+tsemibold
-		+rt(685)
+		+rt(930)
 			position: relative
 			margin-top: 20px 
 	.rightside__table
@@ -867,6 +891,9 @@ header, section, footer
 		.b
 			font-size: 24px 
 			margin-bottom: 35px 
+		.version2	
+			padding-bottom: 25px 
+			border-bottom: 1px solid #89a4c6
 			
 //RADIOBOX MODIFICATION
 .radio	

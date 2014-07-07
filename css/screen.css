@@ -247,6 +247,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 
 .product { *zoom: 1; }
 .product:after { content: " "; display: table; clear: both; }
+.product .details__title { margin-bottom: 45px; }
 
 .breadcrumbs { *zoom: 1; }
 .breadcrumbs:after { content: " "; display: table; clear: both; }
@@ -263,11 +264,20 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 .alternative:after { content: " "; display: table; clear: both; }
 .alternative.hidden { display: none; }
 @media only screen and (max-width: 685px) { .alternative.hidden { display: block; margin-top: 50px; text-align: center; } }
-.alternative img { width: 90px; float: left; margin-right: 10px; }
-@media only screen and (max-width: 685px) { .alternative img { float: none; } }
-.alternative .desc { padding-top: 25px; }
+.alternative.version { margin-top: 25px; }
+@media only screen and (max-width: 685px) { .alternative.version { display: block; float: none; text-align: center; } }
+.alternative .image { float: left; margin-right: 10px; overflow: hidden; }
+@media only screen and (max-width: 685px) { .alternative .image { float: none; } }
+.alternative .image img { width: 90px; }
+.alternative .alt__ver { float: left; width: 33%; }
+@media only screen and (max-width: 930px) { .alternative .alt__ver { width: 50%; } }
+@media only screen and (max-width: 685px) { .alternative .alt__ver { width: 100%; margin-bottom: 50px; } }
+.alternative .alt__ver .add { text-decoration: underline; }
+.alternative .alt__ver .add:hover { text-decoration: none; }
+.alternative .desc { *zoom: 1; padding-top: 25px; }
+.alternative .desc:after { content: " "; display: table; clear: both; }
 .alternative .title { margin-bottom: 15px; font-size: 18px; }
-.alternative .naming { font-size: 30px; color: #254680; font-family: "KlinicSlab-Book", Arial, sans-serif; }
+.alternative .naming { font-size: 30px; color: #254680; line-height: 1; font-family: "KlinicSlab-Book", Arial, sans-serif; }
 .alternative .b { color: #2a8ff1; font-size: 15px; }
 .alternative .add { color: #254680; text-decoration: none; text-transform: uppercase; display: inline-block; margin-top: 20px; font-size: 15px; font-family: "Titillium-Semibold", Arial, sans-serif; }
 
@@ -277,7 +287,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 @media only screen and (max-width: 685px) { .rightside .rightside__title { text-align: center; } }
 .rightside .b { color: #2a8ff1; font-size: 18px; }
 .rightside button { width: 235px; height: 55px; position: absolute; right: 0; bottom: 0; text-transform: uppercase; color: white; background: #254680; font-size: 16px; font-family: "Titillium-Semibold", Arial, sans-serif; }
-@media only screen and (max-width: 685px) { .rightside button { position: relative; margin-top: 20px; } }
+@media only screen and (max-width: 930px) { .rightside button { position: relative; margin-top: 20px; } }
 .rightside .rightside__table { margin: 35px 0 75px 0; width: 90%; }
 @media only screen and (max-width: 685px) { .rightside .rightside__table { width: 100%; } }
 .rightside .rightside__table td { vertical-align: top; color: #254680; }
@@ -293,6 +303,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 .rightside .rightside__quan .price { color: #2a8ff1; background: #d4e9fc; }
 .rightside .rightside__text { color: #254680; }
 .rightside .rightside__text .b { font-size: 24px; margin-bottom: 35px; }
+.rightside .rightside__text .version2 { padding-bottom: 25px; border-bottom: 1px solid #89a4c6; }
 
 .radio { display: inline-block; position: relative; }
 .radio input { width: 11px; height: 11px; z-index: 2; opacity: 0; position: absolute; bottom: 20px; }
