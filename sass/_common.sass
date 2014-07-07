@@ -57,6 +57,29 @@ body
 +font(Titillium-Regular, Titillium-Regular) 
 +font(Titillium-Light, Titillium-Light) 
 +font(KlinicSlabLight, KlinicSlabLight) 
++font(KlinicSlab-Book, KlinicSlab-Book) 
++font(KlinicSlab-Bold, KlinicSlab-Bold) 
+
+=tbold
+	font-family: "Titillium-Bold", Arial, sans-serif 
+
+=tsemibold
+	font-family: "Titillium-Semibold", Arial, sans-serif 
+
+=treg
+	font-family: "Titillium-Regular", Arial, sans-serif 
+	
+=tlight
+	font-family: "Titillium-Light", Arial, sans-serif 
+	
+=klight
+	font-family: "KlinicSlabLight", Arial, sans-serif 
+
+=kbook
+	font-family: "KlinicSlab-Book", Arial, sans-serif 
+	
+=kbold
+	font-family: "KlinicSlab-Bold", Arial, sans-serif 
 
 // common blocks      
 .out
@@ -105,8 +128,9 @@ header, section, footer
 		padding-top: 18px
 		a
 			color: #2a8ff1
-			font: 14px "Titillium-Semibold", Arial, sans-serif
-			text-decoration: none 
+			text-decoration: none
+			font-size: 14px
+			+tsemibold 
 		+rt(1238)
 			text-align: left 
 		+rt(685)
@@ -114,8 +138,9 @@ header, section, footer
 			text-align: center 
 			width: 100% 
 	.contacts
-		font: 16px "Titillium-Bold", Arial, sans-serif 
-		width: 70% 
+		width: 70%
+		font-size: 16px
+		+tbold 
 		+rt(685)
 			width: 100% 
 		span
@@ -152,8 +177,9 @@ header, section, footer
 				display: none
 		.sign 
 			display: inline-block
-			font: 16px "Titillium-Semibold", Arial, sans-serif
+			font-size: 16px
 			color: #254680 
+			+tsemibold 
 			+rt(685)
 				width: 100%
 				text-align: center 
@@ -175,9 +201,10 @@ header, section, footer
 			padding-left: 5px 
 		 
 .header__menu
-	font: 16px "Titillium-Regular", Arial, sans-serif
+	font-size: 16px 
 	padding-top: 15px 
 	float: left
+	+treg
 	+rt(685)
 		float: none
 		text-align: center 
@@ -269,9 +296,10 @@ header, section, footer
 		left: 50%
 		margin-left: -18px 
 	p
-		font: 29px "KlinicSlabLight", Arial, sans-serif 
+		font-size: 29px
 		color: #254680 
-		text-align: center 
+		text-align: center
+		+klight  
 	
 .pharm__text	
 	padding: 115px 0 50px 0 
@@ -284,12 +312,13 @@ header, section, footer
 	button
 		width: 234px
 		height: 55px 
-		font: 16px "Titillium-Semibold", Arial, sans-serif 		
+		font-size: 16px 	
 		text-transform: uppercase 
 		border: 2px solid #254680
 		background: #fff 
 		color: #254680 
 		margin-right: 30px 
+		+tsemibold
 		+box 
 		+rt(518)
 			margin: 0 0 20px 0
@@ -300,11 +329,12 @@ header, section, footer
 			color: #fff 
 			
 .scroll
-	font: 14px "Titillium-Semibold", Arial, sans-serif 
+	font-size: 14px
 	color: #2a8ff1 
 	text-align: center 
 	position: relative
 	padding-bottom: 40px 
+	+tsemibold
 	&:after
 		+s(scroll_i)
 		position: absolute
@@ -321,8 +351,9 @@ header, section, footer
 	p
 		margin-bottom: 60px
 		color: #fff 
-		font: 29px "KlinicSlabLight", Arial, sans-serif 
-		text-align: center 
+		font-size: 29px 
+		text-align: center
+		+klight 
 		 
 .medic__table
 	text-align: center 
@@ -349,9 +380,10 @@ header, section, footer
 		span
 			display: block
 			padding-top: 20px
-			font: 14px "Titillium-Semibold", Arial, sans-serif 
+			font-size: 14px
 			color: #FFF 			 
-			text-transform: uppercase 
+			text-transform: uppercase
+			+tsemibold 
 
 
 .prodsearch
@@ -362,10 +394,11 @@ header, section, footer
 	text-align: center 
 	a
 		display: block
-		font: 13px "Titillium-Regular", Arial, sans-serif
+		font-size: 13px 
 		color: #134A8E
 		text-decoration: none  
-			
+		+treg
+
 .prodsearch__s
 	position: relative
 	display: inline-block
@@ -377,11 +410,12 @@ header, section, footer
 		min-width: 265px 
 	input
 		color: #5b5b5b
+		font-size: 16px 
 		background: #FFF
 		width: 100%
 		height: 55px  
 		padding-left: 37px		
-		font: 16px "Titillium-Regular", Arial, sans-serif 
+		+treg
 		+placeholder-color(#5b5b5b) 
 		+box
 		+rt(685)
@@ -397,14 +431,16 @@ header, section, footer
 		cursor: pointer
 	
 .prodsearch__title
-	font: 24px "KlinicSlabLight", Arial, sans-serif 
+	font-size: 24px  
 	color: #2A8FF1
 	padding-bottom: 35px 
+	+klight
 
 .prodsearch__sort
 	margin-top: 25px  
-	font: 12px "Titillium-Regular", Arial, sans-serif 
+	font-size: 12px 
 	color: #134a8e
+	+treg
 	input
 		margin-right: 5px 
 		opacity: 0
@@ -478,7 +514,8 @@ header, section, footer
 //PAGE SIGN IN
 .sign
 	text-align: center 
-	font: 15px "Titillium-Regular", Arial, sans-serif
+	font-size: 15px 
+	+treg
 	p
 		margin-bottom: 0 
 		font-size: 24px 
@@ -536,14 +573,16 @@ header, section, footer
 .result__wrap
 	margin: 85px auto 165px
 
-.result__title	
-	font: 24px "KlinicSlabLight", Arial, sans-serif
+.result__title
 	color: #2A8FF1 
-	margin-bottom: 50px 
+	margin-bottom: 50px
+	font-size: 24px 
+	+klight 
 
 .result__table
-	font: 17px "Titillium-Regular", Arial, sans-serif
+	font-size: 17px
 	color: #555 
+	+treg 
 	+rt(730)
 		font-size: 13px
 	tr
@@ -563,10 +602,11 @@ header, section, footer
 	.best
 		position: relative
 		.deal
-			font: 12px "Titillium-Light", Arial, sans-serif	
+			font-size: 12px 
 			position: absolute
 			left: -2px
-			bottom: -20px	
+			bottom: -20px
+			+tlight	
 			+rt(730)
 				display: none	
 	.remove
@@ -604,7 +644,7 @@ header, section, footer
 	.forselect
 		position: relative 	
 		span
-			font: 16px "Titillium-Regular", Arial, sans-serif
+			font-size: 16px 
 			border: 1px solid #254680
 			width: 70px
 			height: 40px
@@ -613,6 +653,7 @@ header, section, footer
 			top: -41px
 			left: -1px
 			padding: 7px 0 0 20px
+			+treg
 			+box
 			&:after
 				+s(slct)
@@ -628,8 +669,9 @@ header, section, footer
 
 .details__wrap
 	margin: 30px 0 120px 0
-	font: 18px "Titillium-Regular", Arial, sans-serif
+	font-size: 18px 
 	color: #555 
+	+treg
 
 .details__title
 	color: #254680
@@ -659,7 +701,7 @@ header, section, footer
 			text-align: left
 			padding-right: 15px 
 		.bold
-			font-family: "Titillium-Semibold", Arial, sans-serif
+			+tsemibold
 			
 .details__buttons
 	border-top: 1px solid #dddddd
@@ -670,9 +712,10 @@ header, section, footer
 		text-align: center 
 	button
 		text-transform: uppercase 
-		font: 16px "Titillium-Semibold", Arial, sans-serif
+		font-size: 16px 
 		width: 235px
 		height: 55px 
+		+tsemibold
 	.back		
 		background: none
 		color: #254680
@@ -687,6 +730,182 @@ header, section, footer
 			display: inline-block
 			margin-top: 20px
 
+//PRODUCT PAGE
+.product
+	+clr
+
+.breadcrumbs
+	+clr
+	li
+		float: left
+		padding-right: 5px 
+		+rt(685)
+			float: none
+	a
+		text-decoration: none 
+		color: #254680
+		padding-right: 5px
+	.current
+		color: #2A8FF1 
+		
+.leftside
+	width: 32%
+	float: left 
+	+rt(685)
+		width: 100% 
+		float: none 
+		text-align: center
+		 
+.alternative
+	margin-top: 100px
+	+rt(685)
+		display: none 
+	+clr
+	&.hidden
+		display: none
+		+rt(685)
+			display: block 
+			margin-top: 50px 
+			text-align: center
+	img
+		width: 90px 
+		float: left
+		margin-right: 10px 
+		+rt(685)
+			float: none
+	.desc
+		padding-top: 25px 	
+	.title
+		margin-bottom: 15px	
+		font-size: 18px 
+	.naming
+		font-size: 30px
+		color: #254680 
+		+kbook 
+	.b
+		color: #2A8FF1 
+		font-size: 15px 
+	.add	
+		color: #254680
+		text-decoration: none 
+		text-transform: uppercase 
+		display: inline-block 
+		margin-top: 20px
+		font-size: 15px 
+		+tsemibold
+
+.rightside
+	width: 68%
+	float: left
+	vertical-align: top 
+	+rt(685)
+		width: 85%
+		margin: 0 auto 	
+		float: none 
+	.rightside__title
+		color: #254680
+		font-size: 36px 
+		margin-bottom: 35px 
+		position: relative
+		+kbook 
+		+rt(685)
+			text-align: center 
+	.b
+		color: #2A8FF1  
+		font-size: 18px 
+	button
+		width: 235px
+		height: 55px
+		position: absolute
+		right: 0
+		bottom: 0
+		text-transform: uppercase 
+		color: #fff   	
+		background: #254680 
+		font-size: 16px 
+		+tsemibold
+		+rt(685)
+			position: relative
+			margin-top: 20px 
+	.rightside__table
+		margin: 35px 0 75px 0 
+		width: 90%	
+		+rt(685)
+			width: 100%
+		td
+			vertical-align: top	 
+			color: #254680 
+			+rt(685)
+				padding-right: 15px				 
+			img
+				margin-right: 10px 
+		.b
+			font-size: 14px
+			+tsemibold 	
+	.rightside__quan
+		text-align: center
+		+clr
+		.inrow
+			display: inline-block
+			vertical-align: top
+			padding-right: 6px 
+			&:last-child
+				padding-right: 0 
+			span
+				display: table-cell
+				vertical-align: middle
+				width: 105px
+				height: 50px
+		.quantity
+			color: #FFF
+			background: #254680  
+		.price
+			color: #2A8FF1 
+			background: #D4E9FC
+	.rightside__text
+		color: #254680 	
+		.b
+			font-size: 24px 
+			margin-bottom: 35px 
+			
+//RADIOBOX MODIFICATION
+.radio	
+	display: inline-block
+	position: relative
+	input 
+		width: 11px
+		height: 11px 
+		z-index: 2
+		opacity: 0
+		position: absolute
+		bottom: 20px
+		&:checked
+			+ .radio__title
+				&:after
+					display: block
+					
+.radio__title
+	display: inline-block
+	position: relative
+	z-index: 1
+	&:before
+		content: "" 
+		position: absolute
+		bottom: 20px
+		left: 50%
+		margin-left: -7.5px 
+		+s(radio_i) 
+	&:after
+		content: ""
+		display: none
+		position: absolute
+		bottom: 20px
+		left: 50%
+		margin-left: -7.5px 
+		z-index: 2
+		+s(radio1_i) 
+		
+				 	
 //FOOTER
 footer
 	background: #134a8e

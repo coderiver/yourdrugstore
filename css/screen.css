@@ -31,6 +31,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
 @font-face { font-family: KlinicSlabLight; src: url("fonts/KlinicSlabLight.eot"); src: url("fonts/KlinicSlabLight.eot?#iefix") format("embedded-opentype"), url("fonts/KlinicSlabLight.woff") format("woff"), url("fonts/KlinicSlabLight.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: KlinicSlab-Book; src: url("fonts/KlinicSlab-Book.eot"); src: url("fonts/KlinicSlab-Book.eot?#iefix") format("embedded-opentype"), url("fonts/KlinicSlab-Book.woff") format("woff"), url("fonts/KlinicSlab-Book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: KlinicSlab-Bold; src: url("fonts/KlinicSlab-Bold.eot"); src: url("fonts/KlinicSlab-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/KlinicSlab-Bold.woff") format("woff"), url("fonts/KlinicSlab-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 .out { min-height: 100%; }
 
 header, section, footer { position: relative; width: 100%; min-width: 244px; }
@@ -47,27 +51,27 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 .header__right:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 685px) { .header__right { float: none; width: 100%; } }
 .header__right .cart { float: left; width: 68.8%; text-align: right; padding-top: 18px; }
-.header__right .cart a { color: #2a8ff1; font: 14px "Titillium-Semibold", Arial, sans-serif; text-decoration: none; }
+.header__right .cart a { color: #2a8ff1; text-decoration: none; font-size: 14px; font-family: "Titillium-Semibold", Arial, sans-serif; }
 @media only screen and (max-width: 1238px) { .header__right .cart { text-align: left; } }
 @media only screen and (max-width: 685px) { .header__right .cart { float: none; text-align: center; width: 100%; } }
-.header__right .contacts { font: 16px "Titillium-Bold", Arial, sans-serif; width: 70%; }
+.header__right .contacts { width: 70%; font-size: 16px; font-family: "Titillium-Bold", Arial, sans-serif; }
 @media only screen and (max-width: 685px) { .header__right .contacts { width: 100%; } }
 .header__right .contacts span { color: #2a8ff1; display: inline-block; padding: 15px 45px 0 0; position: relative; }
 .header__right .contacts.ord { width: 31.2%; text-align: center; float: right; }
 .header__right .contacts .phone { padding-left: 35px; }
 @media only screen and (max-width: 1238px) { .header__right .contacts .phone { display: none; } }
-.header__right .contacts .phone:after { background: url('../img/icons-sfb6bdf8d12.png') 0 -142px no-repeat; width: 18px; height: 18px; position: absolute; content: ""; top: 18px; right: 18px; }
+.header__right .contacts .phone:after { background: url('../img/icons-s2b5bb1142d.png') 0 -142px no-repeat; width: 18px; height: 18px; position: absolute; content: ""; top: 18px; right: 18px; }
 .header__right .contacts .phone.ord { padding: 15px 0 0 0; }
 .header__right .contacts .phone.ord:after { display: none; }
-.header__right .contacts .fax:after { background: url('../img/icons-sfb6bdf8d12.png') 0 -195px no-repeat; width: 19px; height: 17px; position: absolute; content: ""; top: 19px; right: 17px; }
+.header__right .contacts .fax:after { background: url('../img/icons-s2b5bb1142d.png') 0 -245px no-repeat; width: 19px; height: 17px; position: absolute; content: ""; top: 19px; right: 17px; }
 @media only screen and (max-width: 1238px) { .header__right .contacts .fax { display: none; } }
-.header__right .contacts .sign { display: inline-block; font: 16px "Titillium-Semibold", Arial, sans-serif; color: #254680; }
+.header__right .contacts .sign { display: inline-block; font-size: 16px; color: #254680; font-family: "Titillium-Semibold", Arial, sans-serif; }
 @media only screen and (max-width: 685px) { .header__right .contacts .sign { width: 100%; text-align: center; padding-top: 10px; } }
 .header__right .contacts .login, .header__right .contacts .reg { display: inline-block; text-decoration: none; }
 .header__right .contacts .login { width: 70px; height: 35px; background: #2a8ff1; color: white; padding-top: 15px; font-size: 15px; text-transform: uppercase; text-align: center; }
 .header__right .contacts .reg { color: #254680; padding-left: 5px; }
 
-.header__menu { font: 16px "Titillium-Regular", Arial, sans-serif; padding-top: 15px; float: left; }
+.header__menu { font-size: 16px; padding-top: 15px; float: left; font-family: "Titillium-Regular", Arial, sans-serif; }
 @media only screen and (max-width: 685px) { .header__menu { float: none; text-align: center; } }
 .header__menu ul { float: left; }
 @media only screen and (max-width: 685px) { .header__menu ul { float: none; } }
@@ -80,7 +84,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 
 .search { float: right; margin-top: 10px; position: relative; }
 .search input { width: 213px; height: 30px; background: #eff0f1; padding-left: 15px; }
-.search i { background: url('../img/icons-sfb6bdf8d12.png') 0 -170px no-repeat; width: 15px; height: 15px; position: absolute; right: 12px; top: 8px; content: ""; cursor: pointer; }
+.search i { background: url('../img/icons-s2b5bb1142d.png') 0 -195px no-repeat; width: 15px; height: 15px; position: absolute; right: 12px; top: 8px; content: ""; cursor: pointer; }
 @media only screen and (max-width: 1247px) { .search { float: left; } }
 @media only screen and (max-width: 685px) { .search { float: none; width: 90%; margin: 5px auto; }
   .search input { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } }
@@ -98,24 +102,24 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 @media only screen and (max-width: 720px) { .cycle-pager span { font-size: 35px; } }
 
 .pharm__wrap { margin: 50px auto 15px; position: relative; }
-.pharm__wrap:before { background: url('../img/icons-sfb6bdf8d12.png') 0 0 no-repeat; width: 36px; height: 75px; position: absolute; content: ""; top: 0; left: 50%; margin-left: -18px; }
-.pharm__wrap p { font: 29px "KlinicSlabLight", Arial, sans-serif; color: #254680; text-align: center; }
+.pharm__wrap:before { background: url('../img/icons-s2b5bb1142d.png') 0 0 no-repeat; width: 36px; height: 75px; position: absolute; content: ""; top: 0; left: 50%; margin-left: -18px; }
+.pharm__wrap p { font-size: 29px; color: #254680; text-align: center; font-family: "KlinicSlabLight", Arial, sans-serif; }
 
 .pharm__text { padding: 115px 0 50px 0; width: 65%; margin: 0 auto; }
 
 .pharm__buttons { text-align: center; padding-bottom: 70px; }
-.pharm__buttons button { width: 234px; height: 55px; font: 16px "Titillium-Semibold", Arial, sans-serif; text-transform: uppercase; border: 2px solid #254680; background: white; color: #254680; margin-right: 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.pharm__buttons button { width: 234px; height: 55px; font-size: 16px; text-transform: uppercase; border: 2px solid #254680; background: white; color: #254680; margin-right: 30px; font-family: "Titillium-Semibold", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 518px) { .pharm__buttons button { margin: 0 0 20px 0; } }
 .pharm__buttons button:last-child { margin-right: 0; }
 .pharm__buttons button:hover { background: #254680; color: white; }
 
-.scroll { font: 14px "Titillium-Semibold", Arial, sans-serif; color: #2a8ff1; text-align: center; position: relative; padding-bottom: 40px; }
-.scroll:after { background: url('../img/icons-sfb6bdf8d12.png') 0 -222px no-repeat; width: 19px; height: 9px; position: absolute; content: ""; top: 30px; left: 50%; margin-left: -9.5px; }
+.scroll { font-size: 14px; color: #2a8ff1; text-align: center; position: relative; padding-bottom: 40px; font-family: "Titillium-Semibold", Arial, sans-serif; }
+.scroll:after { background: url('../img/icons-s2b5bb1142d.png') 0 -272px no-repeat; width: 19px; height: 9px; position: absolute; content: ""; top: 30px; left: 50%; margin-left: -9.5px; }
 
 .medic { background: #2a8ff1; }
 
 .medic__wrap { padding: 85px 0 75px 0; }
-.medic__wrap p { margin-bottom: 60px; color: white; font: 29px "KlinicSlabLight", Arial, sans-serif; text-align: center; }
+.medic__wrap p { margin-bottom: 60px; color: white; font-size: 29px; text-align: center; font-family: "KlinicSlabLight", Arial, sans-serif; }
 
 .medic__table { text-align: center; }
 .medic__table .bl { display: inline-block; width: 17%; margin-bottom: 30px; }
@@ -124,24 +128,24 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 @media only screen and (max-width: 470px) { .medic__table .bl { width: 50%; } }
 .medic__table .bl a { text-decoration: none; display: block; background: white; border-radius: 50%; margin: 0 auto; width: 100px; height: 100px; }
 .medic__table .bl a img { padding-top: 30px; }
-.medic__table .bl span { display: block; padding-top: 20px; font: 14px "Titillium-Semibold", Arial, sans-serif; color: white; text-transform: uppercase; }
+.medic__table .bl span { display: block; padding-top: 20px; font-size: 14px; color: white; text-transform: uppercase; font-family: "Titillium-Semibold", Arial, sans-serif; }
 
 .prodsearch { background: #f8f8f8; }
 
 .prodsearch__wrap { padding: 105px 0 130px 0; text-align: center; }
-.prodsearch__wrap a { display: block; font: 13px "Titillium-Regular", Arial, sans-serif; color: #134a8e; text-decoration: none; }
+.prodsearch__wrap a { display: block; font-size: 13px; color: #134a8e; text-decoration: none; font-family: "Titillium-Regular", Arial, sans-serif; }
 
 .prodsearch__s { position: relative; display: inline-block; width: 45%; min-width: 370px; padding-bottom: 20px; }
 @media only screen and (max-width: 685px) { .prodsearch__s { width: 90%; min-width: 265px; } }
-.prodsearch__s input { color: #5b5b5b; background: white; width: 100%; height: 55px; padding-left: 37px; font: 16px "Titillium-Regular", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.prodsearch__s input { color: #5b5b5b; font-size: 16px; background: white; width: 100%; height: 55px; padding-left: 37px; font-family: "Titillium-Regular", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .prodsearch__s input:-moz-placeholder, .prodsearch__s input::-moz-placeholder { color: #5b5b5b; opacity: 1; }
 .prodsearch__s input::-webkit-input-placeholder { color: #5b5b5b; }
 @media only screen and (max-width: 685px) { .prodsearch__s input { width: 100%; padding-left: 10px; font-size: 12px; } }
-.prodsearch__s i { background: url('../img/icons-sfb6bdf8d12.png') 0 -85px no-repeat; width: 26px; height: 26px; position: absolute; content: ""; top: 15px; right: 20px; cursor: pointer; }
+.prodsearch__s i { background: url('../img/icons-s2b5bb1142d.png') 0 -85px no-repeat; width: 26px; height: 26px; position: absolute; content: ""; top: 15px; right: 20px; cursor: pointer; }
 
-.prodsearch__title { font: 24px "KlinicSlabLight", Arial, sans-serif; color: #2a8ff1; padding-bottom: 35px; }
+.prodsearch__title { font-size: 24px; color: #2a8ff1; padding-bottom: 35px; font-family: "KlinicSlabLight", Arial, sans-serif; }
 
-.prodsearch__sort { margin-top: 25px; font: 12px "Titillium-Regular", Arial, sans-serif; color: #134a8e; }
+.prodsearch__sort { margin-top: 25px; font-size: 12px; color: #134a8e; font-family: "Titillium-Regular", Arial, sans-serif; }
 .prodsearch__sort input { margin-right: 5px; opacity: 0; z-index: 3; }
 .prodsearch__sort input:checked + .checkn:after { display: inline-block; }
 
@@ -157,7 +161,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 @media only screen and (max-width: 357px) { .first { margin-bottom: 15px; } }
 
 .checkn:before { position: absolute; content: ""; width: 12px; height: 12px; border: 1px solid #6e86ae; left: 0; }
-.checkn:after { position: absolute; content: ""; left: 0; display: none; z-index: 2; background: url('../img/icons-sfb6bdf8d12.png') 0 -121px no-repeat; width: 12px; height: 11px; }
+.checkn:after { position: absolute; content: ""; left: 0; display: none; z-index: 2; background: url('../img/icons-s2b5bb1142d.png') 0 -121px no-repeat; width: 12px; height: 11px; }
 
 .categ { background: #2a8ff1; }
 
@@ -171,7 +175,7 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 
 .srch { padding-bottom: 312px; }
 
-.sign { text-align: center; font: 15px "Titillium-Regular", Arial, sans-serif; }
+.sign { text-align: center; font-size: 15px; font-family: "Titillium-Regular", Arial, sans-serif; }
 .sign p { margin-bottom: 0; font-size: 24px; }
 .sign .sign__text { margin-bottom: 60px; }
 .sign input { display: block; margin: 0 auto 10px; width: 31.5%; min-width: 200px; height: 50px; font-size: 16px; color: #5b5b5b; padding-left: 25px; }
@@ -192,9 +196,9 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 
 .result__wrap { margin: 85px auto 165px; }
 
-.result__title { font: 24px "KlinicSlabLight", Arial, sans-serif; color: #2a8ff1; margin-bottom: 50px; }
+.result__title { color: #2a8ff1; margin-bottom: 50px; font-size: 24px; font-family: "KlinicSlabLight", Arial, sans-serif; }
 
-.result__table { font: 17px "Titillium-Regular", Arial, sans-serif; color: #555555; }
+.result__table { font-size: 17px; color: #555555; font-family: "Titillium-Regular", Arial, sans-serif; }
 @media only screen and (max-width: 730px) { .result__table { font-size: 13px; } }
 .result__table tr { border-bottom: 1px solid #dddddd; }
 .result__table td { padding: 30px 0; }
@@ -203,24 +207,24 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 .result__table .name { width: 33%; padding-left: 20px; }
 @media only screen and (max-width: 860px) { .result__table .name { width: 40%; padding-right: 20px; } }
 .result__table .best { position: relative; }
-.result__table .best .deal { font: 12px "Titillium-Light", Arial, sans-serif; position: absolute; left: -2px; bottom: -20px; }
+.result__table .best .deal { font-size: 12px; position: absolute; left: -2px; bottom: -20px; font-family: "Titillium-Light", Arial, sans-serif; }
 @media only screen and (max-width: 730px) { .result__table .best .deal { display: none; } }
 .result__table .remove { cursor: pointer; }
 .result__table .blue, .result__table .srt, .result__table a, .result__table .deal { color: #254680; }
 .result__table .srt { position: relative; cursor: pointer; }
-.result__table .srt i { position: absolute; content: ""; background: url('../img/icons-sfb6bdf8d12.png') 0 -288px no-repeat; width: 9px; height: 5px; top: 10px; right: -14px; }
+.result__table .srt i { position: absolute; content: ""; background: url('../img/icons-s2b5bb1142d.png') 0 -338px no-repeat; width: 9px; height: 5px; top: 10px; right: -14px; }
 @media only screen and (max-width: 730px) { .result__table .srt i { top: 7px; } }
-.result__table .srt i.active { position: absolute; content: ""; background: url('../img/icons-sfb6bdf8d12.png') 0 -303px no-repeat; width: 9px; height: 5px; top: 10px; right: -14px; }
+.result__table .srt i.active { position: absolute; content: ""; background: url('../img/icons-s2b5bb1142d.png') 0 -353px no-repeat; width: 9px; height: 5px; top: 10px; right: -14px; }
 @media only screen and (max-width: 730px) { .result__table .srt i.active { top: 7px; } }
 .result__table a:hover { text-decoration: none; }
 .result__table select { position: relative; width: 70px; height: 40px; z-index: 2; opacity: 0; }
 .result__table .forselect { position: relative; }
-.result__table .forselect span { font: 16px "Titillium-Regular", Arial, sans-serif; border: 1px solid #254680; width: 70px; height: 40px; display: inline-block; position: absolute; top: -41px; left: -1px; padding: 7px 0 0 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.result__table .forselect span:after { background: url('../img/icons-sfb6bdf8d12.png') 0 -241px no-repeat; width: 13px; height: 7px; position: absolute; content: ""; top: 15px; right: 10px; }
+.result__table .forselect span { font-size: 16px; border: 1px solid #254680; width: 70px; height: 40px; display: inline-block; position: absolute; top: -41px; left: -1px; padding: 7px 0 0 20px; font-family: "Titillium-Regular", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.result__table .forselect span:after { background: url('../img/icons-s2b5bb1142d.png') 0 -291px no-repeat; width: 13px; height: 7px; position: absolute; content: ""; top: 15px; right: 10px; }
 
 .common { max-width: 1244px; margin: 0 auto; }
 
-.details__wrap { margin: 30px 0 120px 0; font: 18px "Titillium-Regular", Arial, sans-serif; color: #555555; }
+.details__wrap { margin: 30px 0 120px 0; font-size: 18px; color: #555555; font-family: "Titillium-Regular", Arial, sans-serif; }
 
 .details__title { color: #254680; border-bottom: 1px solid #bdc7d9; border-top: 1px solid #bdc7d9; padding: 30px 0; margin-bottom: 85px; }
 @media only screen and (max-width: 685px) { .details__title { text-align: center; } }
@@ -236,10 +240,67 @@ header, section, footer { position: relative; width: 100%; min-width: 244px; }
 
 .details__buttons { border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; padding: 25px 0; position: relative; }
 @media only screen and (max-width: 505px) { .details__buttons { text-align: center; } }
-.details__buttons button { text-transform: uppercase; font: 16px "Titillium-Semibold", Arial, sans-serif; width: 235px; height: 55px; }
+.details__buttons button { text-transform: uppercase; font-size: 16px; width: 235px; height: 55px; font-family: "Titillium-Semibold", Arial, sans-serif; }
 .details__buttons .back { background: none; color: #254680; border: 2px solid #254680; }
 .details__buttons .complete { background: #254680; color: white; position: absolute; right: 0; }
 @media only screen and (max-width: 505px) { .details__buttons .complete { position: relative; display: inline-block; margin-top: 20px; } }
+
+.product { *zoom: 1; }
+.product:after { content: " "; display: table; clear: both; }
+
+.breadcrumbs { *zoom: 1; }
+.breadcrumbs:after { content: " "; display: table; clear: both; }
+.breadcrumbs li { float: left; padding-right: 5px; }
+@media only screen and (max-width: 685px) { .breadcrumbs li { float: none; } }
+.breadcrumbs a { text-decoration: none; color: #254680; padding-right: 5px; }
+.breadcrumbs .current { color: #2a8ff1; }
+
+.leftside { width: 32%; float: left; }
+@media only screen and (max-width: 685px) { .leftside { width: 100%; float: none; text-align: center; } }
+
+.alternative { margin-top: 100px; *zoom: 1; }
+@media only screen and (max-width: 685px) { .alternative { display: none; } }
+.alternative:after { content: " "; display: table; clear: both; }
+.alternative.hidden { display: none; }
+@media only screen and (max-width: 685px) { .alternative.hidden { display: block; margin-top: 50px; text-align: center; } }
+.alternative img { width: 90px; float: left; margin-right: 10px; }
+@media only screen and (max-width: 685px) { .alternative img { float: none; } }
+.alternative .desc { padding-top: 25px; }
+.alternative .title { margin-bottom: 15px; font-size: 18px; }
+.alternative .naming { font-size: 30px; color: #254680; font-family: "KlinicSlab-Book", Arial, sans-serif; }
+.alternative .b { color: #2a8ff1; font-size: 15px; }
+.alternative .add { color: #254680; text-decoration: none; text-transform: uppercase; display: inline-block; margin-top: 20px; font-size: 15px; font-family: "Titillium-Semibold", Arial, sans-serif; }
+
+.rightside { width: 68%; float: left; vertical-align: top; }
+@media only screen and (max-width: 685px) { .rightside { width: 85%; margin: 0 auto; float: none; } }
+.rightside .rightside__title { color: #254680; font-size: 36px; margin-bottom: 35px; position: relative; font-family: "KlinicSlab-Book", Arial, sans-serif; }
+@media only screen and (max-width: 685px) { .rightside .rightside__title { text-align: center; } }
+.rightside .b { color: #2a8ff1; font-size: 18px; }
+.rightside button { width: 235px; height: 55px; position: absolute; right: 0; bottom: 0; text-transform: uppercase; color: white; background: #254680; font-size: 16px; font-family: "Titillium-Semibold", Arial, sans-serif; }
+@media only screen and (max-width: 685px) { .rightside button { position: relative; margin-top: 20px; } }
+.rightside .rightside__table { margin: 35px 0 75px 0; width: 90%; }
+@media only screen and (max-width: 685px) { .rightside .rightside__table { width: 100%; } }
+.rightside .rightside__table td { vertical-align: top; color: #254680; }
+@media only screen and (max-width: 685px) { .rightside .rightside__table td { padding-right: 15px; } }
+.rightside .rightside__table td img { margin-right: 10px; }
+.rightside .rightside__table .b { font-size: 14px; font-family: "Titillium-Semibold", Arial, sans-serif; }
+.rightside .rightside__quan { text-align: center; *zoom: 1; }
+.rightside .rightside__quan:after { content: " "; display: table; clear: both; }
+.rightside .rightside__quan .inrow { display: inline-block; vertical-align: top; padding-right: 6px; }
+.rightside .rightside__quan .inrow:last-child { padding-right: 0; }
+.rightside .rightside__quan .inrow span { display: table-cell; vertical-align: middle; width: 105px; height: 50px; }
+.rightside .rightside__quan .quantity { color: white; background: #254680; }
+.rightside .rightside__quan .price { color: #2a8ff1; background: #d4e9fc; }
+.rightside .rightside__text { color: #254680; }
+.rightside .rightside__text .b { font-size: 24px; margin-bottom: 35px; }
+
+.radio { display: inline-block; position: relative; }
+.radio input { width: 11px; height: 11px; z-index: 2; opacity: 0; position: absolute; bottom: 20px; }
+.radio input:checked + .radio__title:after { display: block; }
+
+.radio__title { display: inline-block; position: relative; z-index: 1; }
+.radio__title:before { content: ""; position: absolute; bottom: 20px; left: 50%; margin-left: -7.5px; background: url('../img/icons-s2b5bb1142d.png') 0 -220px no-repeat; width: 15px; height: 15px; }
+.radio__title:after { content: ""; display: none; position: absolute; bottom: 20px; left: 50%; margin-left: -7.5px; z-index: 2; background: url('../img/icons-s2b5bb1142d.png') 0 -170px no-repeat; width: 15px; height: 15px; }
 
 footer { background: #134a8e; }
 
