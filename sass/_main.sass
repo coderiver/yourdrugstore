@@ -1,2 +1,257 @@
 // Normally mainpage styles
- 
+.cycle-slideshow
+	overflow: hidden
+	max-height: 575px
+	a,img
+		width: 100%
+		
+.cycle-pager
+	position: absolute
+	z-index: 500
+	bottom: -15px
+	left: 50%
+	margin-left: -35px 
+	+rt(1120)
+		margin-left: -32px
+	+rt(720)
+		margin-left: -25px
+		bottom: -10px 
+	.cycle-pager-active
+		color: #2a8ff0
+	
+.cycle-pager span
+	color: #fff
+	font-size: 50px
+	cursor: pointer
+	padding-right: 7px 
+	+rt(1120)
+		font-size: 45px 
+	+rt(720)
+		font-size: 35px 	
+	 
+.pharm__wrap
+	margin: 50px auto 15px
+	position: relative
+	&:before
+		+s(logo2)
+		position: absolute
+		content: ""
+		top: 0
+		left: 50%
+		margin-left: -18px 
+	p
+		font-size: 29px
+		color: #254680 
+		text-align: center
+		+klight  
+	
+.pharm__text	
+	padding: 115px 0 50px 0 
+	width: 65%
+	margin: 0 auto  
+	
+.pharm__buttons
+	text-align: center
+	padding-bottom: 70px 
+	button
+		width: 234px
+		height: 55px 
+		font-size: 16px 	
+		text-transform: uppercase 
+		border: 2px solid #254680
+		background: #fff 
+		color: #254680 
+		margin-right: 30px 
+		+tsemibold
+		+box 
+		+rt(518)
+			margin: 0 0 20px 0
+		&:last-child
+			margin-right: 0 
+		&:hover
+			background: #254680 
+			color: #fff 
+			
+.scroll
+	font-size: 14px
+	color: #2a8ff1 
+	text-align: center 
+	position: relative
+	padding-bottom: 40px 
+	+tsemibold
+	&:after
+		+s(scroll_i)
+		position: absolute
+		content: ""		
+		top: 30px
+		left: 50%
+		margin-left: -9.5px
+
+.medic
+	background: #2a8ff1
+	
+.medic__wrap
+	padding: 85px 0 75px 0
+	p
+		margin-bottom: 60px
+		color: #fff 
+		font-size: 29px 
+		text-align: center
+		+klight 
+		 
+.medic__table
+	text-align: center 
+	.bl
+		display: inline-block
+		width: 17%
+		margin-bottom: 30px
+		+rt(680)
+			width: 20%
+		+rt(580)
+			width: 25%
+		+rt(470)
+			width: 50%
+		a
+			text-decoration: none 			
+			display: block
+			background: #FFF
+			border-radius: 50% 
+			margin: 0 auto 
+			width: 100px
+			height: 100px		
+			img
+				padding-top: 30px					
+		span
+			display: block
+			padding-top: 20px
+			font-size: 14px
+			color: #FFF 			 
+			text-transform: uppercase
+			+tsemibold 
+
+
+.prodsearch
+	background: #F8F8F8 
+
+.prodsearch__wrap
+	padding: 105px 0 130px 0
+	text-align: center 
+	a
+		display: block
+		font-size: 13px 
+		color: #134A8E
+		text-decoration: none  
+		+treg
+
+.prodsearch__s
+	position: relative
+	display: inline-block
+	width: 45%
+	min-width: 370px
+	padding-bottom: 20px 
+	+rt(685)
+		width: 90% 
+		min-width: 265px 
+	input
+		color: #5b5b5b
+		font-size: 16px 
+		background: #FFF
+		width: 100%
+		height: 55px  
+		padding-left: 37px		
+		+treg
+		+placeholder-color(#5b5b5b) 
+		+box
+		+rt(685)
+			width: 100% 
+			padding-left: 10px
+			font-size: 12px  
+	i
+		+s(arrow)
+		position: absolute
+		content: ""
+		top: 15px
+		right: 20px
+		cursor: pointer
+	
+.prodsearch__title
+	font-size: 24px  
+	color: #2A8FF1
+	padding-bottom: 35px 
+	+klight
+
+.prodsearch__sort
+	margin-top: 25px  
+	font-size: 12px 
+	color: #134a8e
+	+treg
+	input
+		margin-right: 5px 
+		opacity: 0
+		z-index: 3
+		&:checked
+			+ .checkn
+				&:after
+					display: inline-block
+					
+.check
+	position: relative
+	display: inline-block
+	cursor: pointer
+	+rt(357)
+		margin-bottom: 15px 
+
+.middle
+	margin: 0 65px 0 
+	+rt(470)
+		margin: 0 20px 
+	+rt(357)
+		margin-bottom: 15px 
+.first
+	margin-right: 80px
+	+rt(470)
+		margin: 0 20px 
+	+rt(357)
+		margin-bottom: 15px 
+
+.checkn
+	&:before
+		position: absolute
+		content: ""
+		width: 12px 
+		height: 12px
+		border: 1px solid #6e86ae
+		left: 0
+	&:after
+		position: absolute
+		content: ""
+		left: 0
+		display: none
+		z-index: 2
+		+s(checkn)	
+	
+.categ
+	background: #2a8ff1
+	
+.categ__wrap
+	padding: 70px 0 100px 0 
+	text-align: center 
+	.medic__table
+		.bl
+			width: 22.5% 
+			+rt(600)
+				width: 25%
+			+rt(520)
+				width: 35%
+			+rt(470)
+				width: 50%
+		a
+			img
+				padding-top: 20px 
+	.prodsearch__title
+		color: #FFF 
+		padding-bottom: 60px 
+		
+.srch
+	padding-bottom: 312px 
+	

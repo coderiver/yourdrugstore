@@ -1,0 +1,85 @@
+//RADIOBOX MODIFICATION
+.radio	
+	display: inline-block
+	position: relative
+	input 
+		width: 11px
+		height: 11px 
+		z-index: 2
+		opacity: 0
+		position: absolute
+		bottom: 20px
+		&:checked
+			+ .radio__title
+				&:after
+					display: block
+					
+.radio__title
+	display: inline-block
+	position: relative
+	z-index: 1
+	&:before
+		content: "" 
+		position: absolute
+		bottom: 20px
+		left: 50%
+		margin-left: -7.5px 
+		+s(radio_i) 
+	&:after
+		content: ""
+		display: none
+		position: absolute
+		bottom: 20px
+		left: 50%
+		margin-left: -7.5px 
+		z-index: 2
+		+s(radio1_i) 
+		
+//BUTTONS MODIFICATION				
+.details__buttons
+	border-top: 1px solid #dddddd
+	border-bottom: 1px solid #dddddd
+	padding: 25px 0
+	+clr
+	+rt(505)
+		text-align: center 
+	button
+		text-transform: uppercase 
+		font-size: 16px 
+		width: 235px
+		height: 55px 
+		+tsemibold
+	.back		
+		background: none
+		color: #254680
+		border: 2px solid #254680 
+		position: relative
+		&.checkout
+			&:before
+				position: absolute
+				content: ""
+				top: 21px
+				left: 18px
+				+s(drop) 
+				+rotate(90)
+		&.continue
+			float: right
+			+rt(505)
+				float: none
+				margin-top: 20px
+			&:after
+				position: absolute
+				content: ""
+				+s(drop)
+				+rotate(270)	
+				top: 21px
+				right: 18px						
+	.complete
+		background: #254680
+		color: #fff 
+		float: right
+		+rt(505)
+			float: none
+			display: inline-block
+			margin-top: 20px
+			
