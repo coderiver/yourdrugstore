@@ -255,6 +255,8 @@ body
 	margin-bottom: 85px 
 	+rt(685)
 		text-align: center
+	&.paymentinfo
+		margin-bottom: 40px 	
 
 .details__total
 	+clr
@@ -442,5 +444,194 @@ body
 			padding-bottom: 25px 
 			border-bottom: 1px solid #89a4c6
 			
+//PAGE CHECKOUT PAYMENT
+.chpay
+	margin-bottom: 60px
+	border-bottom: 1px solid #bdc7d9
+	border-top: 1px solid #bdc7d9
+	padding: 20px 0
+	color: #254680 
+	+clr
 
-				 	
+.chpay__title
+	float: left
+	padding-top: 10px 
+	+rt(580)
+		float: none
+		text-align: center 
+
+.chpay__numbers
+	float: right
+	+rt(580)
+		float: none
+		margin: 20px auto 0
+		width: 230px	
+	li
+		float: left
+		display: block 
+	.one
+		+png(num)
+	.two
+		+png(num2)
+	.three
+		+png(num3)	
+
+.paymentinfo
+	margin-bottom: 50px 		
+
+.paymentinfo__table	
+	width: 50%	
+	color: #254680
+	+rt(685)
+		margin: 0 auto 
+		width: 80% 
+	a
+		+tsemibold
+		font-size: 16px 
+		color: #254680
+		&:hover
+			text-decoration: none 
+	.paymentinfo__name
+		+tbold
+	td
+		padding-right: 20px 
+		min-width: 100px
+	.ifradio
+		padding-right: 10px 
+		min-width: 15px 			
+
+.data
+	margin-bottom: 35px
+	+clr
+
+.data__left
+	width: 500px
+	float: left
+	+rt(790)
+		padding-left: 20px
+	+rt(685)
+		float: none
+		text-align: center
+		padding-left: 0 
+		width: 100%
+	a
+		color: #254680
+		&:hover
+			text-decoration: none 
+	
+.data__table
+	margin-bottom: 20px  
+	width: 71.875%
+	+rt(685)
+		margin: 0 auto 20px 
+	.radio
+		&.version
+			input
+				left: 50%
+				margin-left: -7.5px 
+	.radio__title
+		&.version		
+			position: static
+			&:before,
+			&:after
+				margin-left: -7.5px
+				
+.data__fieldset
+	width: 500px
+	margin-bottom: 15px
+	font-size: 0
+	+rt(685)
+		width: 100% 		 
+	input
+		font-size: 0 
+		width: percentage(240px/500px)
+		min-width: 200px
+		height: 50px
+		margin: 0 15px 15px 0
+		padding-left: 20px
+		border: 1px solid #134a8e
+		color: #254680
+		display: inline-block	
+		font-size: 17px 
+		+placeholder-color(#254680)		
+		+treg
+		+box
+		+rt(415)
+			margin-right: 0 
+		&.this
+			margin-right: 0 
+	.long
+		width: 99%
+		margin-right: 0	
+	a
+		font-size: 13px 
+		+rt(790)
+			display: block
+			width: 240px 
+			margin-bottom: 20px  
+			text-align: center	
+		+rt(685)
+			width: 100%	 	
+	.dropdown
+		display: inline-block
+		position: relative
+		width: percentage(240px/500px)
+		min-width: 200px
+		height: 50px
+		margin: 0 15px 15px 0
+		+rt(415)
+			margin-right: 0 
+		&.this
+			margin-right: 0 
+		input
+			width: 100%
+		select
+			opacity: 0
+			position: absolute
+			width: 100%
+			height: 50px
+			z-index: 3
+			cursor: pointer
+		i
+			position: absolute
+			right: 20px
+			bottom: 20px 
+			+s(drop)
+
+.data__checkbox
+	font-size: 14px 
+	color: #254680 
+	+treg
+	input
+		margin-right: 15px 
+	p
+		margin-top: 15px 	
+		
+.data__right
+	float: right
+	width: 32%	
+	text-align: right
+	color: #254680 
+	+rt(780)
+		width: 35% 	
+	+rt(685)
+		float: none	
+		width: 50% 
+		margin: 35px auto 0
+		text-align: left 
+
+.data__title, .data__total
+	min-width: 244px
+	 
+.data__title
+	padding: 15px 0
+	border-bottom: 1px solid #bdc7d9
+	border-top: 1px solid #bdc7d9
+
+.data__total	
+	font-size: 15px
+	margin-top: 35px
+	td
+		padding-right: 10px 
+	.medium
+		+tbold

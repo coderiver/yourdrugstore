@@ -1,4 +1,5 @@
 //RADIOBOX MODIFICATION
+//VERSION 1
 .radio	
 	display: inline-block
 	position: relative
@@ -34,7 +35,26 @@
 		margin-left: -7.5px 
 		z-index: 2
 		+s(radio1_i) 
-		
+
+//VERSION 2
+.radio
+	&.version
+		input
+			bottom: 0
+		img
+			display: block 
+			
+.radio__title
+	&.version
+		&:before			
+			bottom: 0
+			margin: 0 
+			+s(radio_ver) 
+		&:after
+			bottom: 0
+			margin: 0 
+			+s(radio_ver1) 
+						
 //BUTTONS MODIFICATION				
 .details__buttons
 	border-top: 1px solid #dddddd
@@ -83,3 +103,31 @@
 			display: inline-block
 			margin-top: 20px
 			
+//CHECKBOX MODIFICATION
+.checkbox 
+	display: inline-block
+	position: relative
+	input
+		opacity: 0
+		&:checked
+			+ .checkbox__title
+				&:after
+					display: block
+	
+.checkbox__title
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		width: 19px
+		height: 19px
+		border: 1px solid #254680
+		background: white
+	&:after
+		content: ""
+		display: none
+		position: absolute
+		top: 4px
+		left: 1px
+		z-index: 2
+		+s(checkn1)

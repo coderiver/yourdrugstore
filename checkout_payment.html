@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![ENDif]-->
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- BEGIN  header-->
+	<header>
+		<!-- BEGIN header__wrapper  -->
+		<div class="header__wrap">
+			<div class="header__logo">
+				<img src="img/logo.png" alt="YouDrugstore">	
+			</div>
+			<!-- BEGIN header__right  -->
+			<div class="header__right">
+				<div class="cart"><a href="#">My Cart (2)</a></div>
+				<div class="contacts ord">
+					<span class="phone ord">1-855-YOU-MEDS</span> 
+				</div>				
+				<nav class="header__menu">
+					<ul>
+						<li><a href="#">Order</a></li>
+						<li><a href="#">Refill an Order</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<div class="social">
+						<a href="https://www.facebook.com/"><img src="img/fb.png" alt="Facebook"></a>
+						<a href="https://www.facebook.com/"><img src="img/twit.png" alt="Twitter"></a>
+					</div>
+				</nav>
+				<div class="search">
+					<input type="text"><i></i>
+				</div>
+			</div>			
+			<!-- END header__right -->		
+		</div>
+		<!-- END header__wrapper -->
+	</header>
+	<!-- END  header-->
+	<!-- BEGIN  main-->
+	<main>		
+		<!-- BEGIN details  -->
+		<section class="details">
+			<div class="common">
+				<!-- begin  details__wrap -->
+				<div class="details__wrap">
+					<!-- begin chpay  -->
+					<div class="chpay">
+						<div class="chpay__title">
+							<p>Place Order - Step 1 - Payment Method</p>
+						</div>					
+						<div class="chpay__numbers">
+							<ul>
+								<li class="one"></li>
+								<li class="two"></li>
+								<li class="three"></li>
+							</ul>
+						</div>					
+					</div>
+					<!-- end chpay -->					
+					<!-- begin paymentinfo  -->
+					<div class="paymentinfo">
+						<table class="paymentinfo__table">
+							<tr>
+								<td class="ifradio">
+									<label class="radio version">
+										<input type="radio" name="paymentinfo" value="Payment Info 1">
+										<span class="radio__title version"></span>
+									</label>	
+								</td>
+								<td>
+									<ul>
+										<li><span class="paymentinfo__name">Payment Info 1</span></li>
+										<li>John Smith</li>
+										<li>Credit Card: Visa</li>
+										<li>xxx - xxxx - 0054</li>
+									</ul>
+								</td>	
+								<td class="ifradio">
+									<label class="radio version">
+										<input type="radio" name="paymentinfo" value="Payment Info 2">
+										<span class="radio__title version"></span>
+									</label>	
+								</td>
+								<td>
+									<ul>
+										<li><span class="paymentinfo__name">Payment Info 2</span></li>
+										<li>Jane Doe</li>
+										<li>Credit Card: Amex</li>
+										<li>xxx - xxxx - 2562</li>
+									</ul>
+								</td>
+								<td>
+									<a class="hidden" href="#">Add New Card</a>
+								</td>	
+							</tr>
+						</table>
+					</div>
+					<!-- end paymentinfo -->
+					<!-- begin data  -->
+					<div class="data">
+						<!-- begin data__left  -->
+						<div class="data__left">
+							<form>
+								<table class="data__table">
+									<tr>
+										<td>
+											<label class="radio version">
+												<img src="img/visa.png" alt="Visa">
+												<input type="radio" name="choice" value="Visa">
+												<span class="radio__title version"></span>
+											</label>
+										</td>
+										<td>
+											<label class="radio version">
+												<img src="img/master.png" alt="MasterCard">
+												<input type="radio" name="choice" value="MasterCard">
+												<span class="radio__title version"></span>
+											</label>
+										</td>
+										<td>
+											<label class="radio version">
+												<img src="img/american.png" alt="AmericanExpress">
+												<input type="radio" name="choice" value="AmericanExpress">
+												<span class="radio__title version"></span>
+											</label>
+										</td>
+										<td>
+											<label class="radio version">
+												<img src="img/ucb.png" alt="UCB">
+												<input type="radio" name="choice" value="UCB">
+												<span class="radio__title version"></span>
+											</label>
+										</td>
+										<td>
+											<label class="radio version">
+												<img src="img/discover.png" alt="Discover">
+												<input type="radio" name="choice" value="Discover">
+												<span class="radio__title version"></span>
+											</label>
+										</td>
+										<td>
+											<label class="radio version">
+												<img src="img/paypal.png" alt="Paypal">
+												<input type="radio" name="choice" value="Paypal">
+												<span class="radio__title version"></span>
+											</label>
+										</td>
+									</tr>
+							</table>
+							<div class="data__fieldset">
+										<input class="long" type="text" placeholder="Card Number*" required>	
+										<div class="dropdown">
+											<select>
+												<option>Expiry Date Month*</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+											</select>
+											<input type="text" placeholder="Expiry Date Month*" required><i></i>
+										</div>
+										<div class="dropdown this">
+											<select>
+												<option>Expiry Date Year*</option>
+												<option value="2014">2014</option>
+												<option value="2015">2015</option>
+												<option value="2016">2016</option>
+												<option value="2017">2017</option>
+												<option value="2018">2018</option>
+												<option value="2019">2019</option>
+											</select>
+											<input class="slct" type="text" placeholder="Expiry Date Year*" required><i></i>
+										</div>
+										<input type="text" placeholder="CVV2 Security Code*" required>
+										<a href="#">What is this?</a>
+										<input class="long" type="text" placeholder="Card Holder Name*" required>
+										<input type="text" placeholder="Billing Address*" required>
+										<input class="this" type="text" placeholder="City*" required>
+										<input type="text" placeholder="Province/State*" required>
+										<input class="this" type="text" placeholder="Postal Code/ZIP*" required>
+							</div>
+							<div class="data__checkbox">
+								<label class="checkbox">
+									<input type="checkbox" name="choice" value="Express">
+									<span class="checkbox__title">I have read and accept the <a href="#">terms of purchase</a> and <a href="#">privacy policy</a></span>
+								</label>
+								<p>*Required field</p>
+							</div>
+							</form>
+						</div>
+						<!-- end data__left -->
+						<!-- begin data__right  -->
+						<div class="data__right">
+							<p class="data__title">Payment Summary:</p>
+							<table class="data__total">
+								<tr>
+									<td>Total Products</td>
+									<td>2598.00 CAD</td>
+								</tr>
+								<tr>
+									<td>Discount</td>
+									<td>0.00 CAD</td>
+								</tr>
+								<tr>
+									<td>Standard Shipping</td>
+									<td>4.95 CAD</td>
+								</tr>
+								<tr>
+									<td>Subtotal</td>
+									<td>2603.95 CAD</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>HST/TVH 13.00%</td>
+									<td>338.51 CAD</td>
+								</tr>
+								<tr>
+									<td>HST/TVH 12.96%</td>
+									<td>337.47 CAD</td>
+								</tr>
+								<tr>
+									<td>Total Tax</td>
+									<td>675.98 CAD</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="medium">TOTAL</td>
+									<td class="medium">3279.93 CAD</td>
+								</tr>
+							</table>
+						</div>
+						<!-- end data__right -->
+					</div>
+					<!-- end data -->
+					<div class="details__buttons">
+						<button type="button" class="back checkout">Back</button>
+						<button type="submit" class="back continue">Continue</button>
+					</div>
+				</div>	
+				<!-- end details__wrap -->		
+				</div>			
+			</div>				
+		</section>
+		<!-- END details -->
+	</main>
+	<!-- END  main-->
+	<!-- BEGIN footer  -->
+	<footer>
+		<div class="footer__wrap">
+			<div class="footer__menu">
+				<ul>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Accreditations</a></li>
+					<li><a href="#">Shipping & Returns</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Recalls</a></li>
+					<li><a href="#">About YouDrugstore</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Licensing</a></li>
+					<li><a href="#">Affiliate Program</a></li>
+					<li><a href="#">Sitemap</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<ul class="footer__social">
+					<li><a href="#">Follow Us:</a></li>
+					<li>
+						<a href="https://www.facebook.com/"><img src="img/fb1.png" alt="Facebook"></a>
+						<a href="https://www.facebook.com/"><img src="img/twit1.png" alt="Twitter"></a>
+					</li>
+				</ul>
+			</div>			
+		</div>
+		<div class="footer__badge">
+			<div class="footer__wrap">
+				<img src="img/sf1.png" alt="Safe">
+				<img src="img/sf2.png" alt="Safe">
+				<img src="img/sf3.png" alt="Safe">
+				<img src="img/sf4.png" alt="Safe">
+				<img src="img/sf5.png" alt="Safe">
+			</div>
+		</div>
+	</footer>
+	<!-- END footer -->
+</div>
+<!-- END out-->
+
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
