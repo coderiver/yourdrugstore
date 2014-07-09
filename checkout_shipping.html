@@ -53,152 +53,97 @@
 			<div class="common">
 				<!-- begin  details__wrap -->
 				<div class="details__wrap">
-					<!-- begin chpay  -->
 					<div class="chpay">
 						<div class="chpay__title">
-							<p>Place Order - Step 1 - Payment Method</p>
+							<p>Place Order - Step 2 - Shipping Method</p>
 						</div>					
 						<div class="chpay__numbers">
 							<ul>
-								<li class="one"></li>
-								<li class="two"></li>
+								<li class="one inshadow"></li>
+								<li class="two active"></li>
 								<li class="three"></li>
 							</ul>
 						</div>					
-					</div>
-					<!-- end chpay -->					
-					<!-- begin paymentinfo  -->
-					<div class="paymentinfo">
-						<table class="paymentinfo__table">
-							<tr>
-								<td class="ifradio">
-									<label class="radio version">
-										<input type="radio" name="paymentinfo" value="Payment Info 1">
-										<span class="radio__title version"></span>
-									</label>	
-								</td>
-								<td>
-									<ul>
-										<li><span class="paymentinfo__name">Payment Info 1</span></li>
-										<li>John Smith</li>
-										<li>Credit Card: Visa</li>
-										<li>xxx - xxxx - 0054</li>
-									</ul>
-								</td>	
-								<td class="ifradio">
-									<label class="radio version">
-										<input type="radio" name="paymentinfo" value="Payment Info 2">
-										<span class="radio__title version"></span>
-									</label>	
-								</td>
-								<td>
-									<ul>
-										<li><span class="paymentinfo__name">Payment Info 2</span></li>
-										<li>Jane Doe</li>
-										<li>Credit Card: Amex</li>
-										<li>xxx - xxxx - 2562</li>
-									</ul>
-								</td>
-								<td>
-									<a href="#">Add New Card</a>
-								</td>	
-							</tr>
-						</table>
-					</div>
-					<!-- end paymentinfo -->
+					</div>					
 					<!-- begin data  -->
 					<div class="data">
 						<!-- begin data__left  -->
-						<div class="data__left">
-							<form>
-								<table class="data__table">
+					<div class="data__left">
+						<form>	
+							<div class="data__shipping">
+								<div>
+									<label class="radio version">
+										<input type="radio" name="choice" value="Xpresspost">
+										<span class="radio__title version">CanadaPost USA Xpresspost USA</span>
+										<span class="info">($25.00 USD)</span>
+									</label>
+								</div>
+								<div class="data__send">
+									<label class="radio version">
+										<input type="radio" name="choice" value="Tracked">
+										<span class="radio__title version">CanadaPost USA Tracked Packet USA</span>
+										<span class="info">($15.00 USD)</span>
+									</label>
+								</div>	
+							</div>
+							<p class="data__text">Shipping Address:</p>	
+							<!-- begin paymentinfo  -->
+							<div class="paymentinfo">
+								<table class="paymentinfo__table shipping">
 									<tr>
-										<td>
+										<td class="ifradio">
 											<label class="radio version">
-												<img src="img/visa.png" alt="Visa">
-												<input type="radio" name="choice" value="Visa">
+												<input type="radio" name="address" value="Address 1">
 												<span class="radio__title version"></span>
-											</label>
+											</label>	
 										</td>
 										<td>
+											<ul>
+												<li><span class="paymentinfo__name">Address 1</span></li>
+												<li>822 Richmond St W</li>
+												<li>Toronto ON M6J 3G1</li>
+												<li><a class="reg" href="#">Edit</a></li>
+											</ul>
+										</td>	
+										<td class="ifradio">
 											<label class="radio version">
-												<img src="img/master.png" alt="MasterCard">
-												<input type="radio" name="choice" value="MasterCard">
+												<input type="radio" name="address" value="Address 2">
 												<span class="radio__title version"></span>
-											</label>
+											</label>	
 										</td>
 										<td>
-											<label class="radio version">
-												<img src="img/american.png" alt="AmericanExpress">
-												<input type="radio" name="choice" value="AmericanExpress">
-												<span class="radio__title version"></span>
-											</label>
+											<ul>
+												<li><span class="paymentinfo__name">Address 2</span></li>
+												<li>321 Spadina Ave</li>
+												<li>Toronto ON M6G 9S2</li>
+												<li><a class="reg" href="#">Edit</a></li>
+											</ul>
 										</td>
 										<td>
-											<label class="radio version">
-												<img src="img/ucb.png" alt="UCB">
-												<input type="radio" name="choice" value="UCB">
-												<span class="radio__title version"></span>
-											</label>
+											<a href="#">Add New Address</a>
 										</td>
-										<td>
-											<label class="radio version">
-												<img src="img/discover.png" alt="Discover">
-												<input type="radio" name="choice" value="Discover">
-												<span class="radio__title version"></span>
-											</label>
-										</td>
-										<td>
-											<label class="radio version">
-												<img src="img/paypal.png" alt="Paypal">
-												<input type="radio" name="choice" value="Paypal">
-												<span class="radio__title version"></span>
-											</label>
-										</td>
-									</tr>
-							</table>
+										</tr>
+								</table>
+							</div>
+							<!-- end paymentinfo -->						
 							<div class="data__fieldset">
-										<input class="long" type="text" placeholder="Card Number*" required>	
-										<div class="dropdown">
-											<select>
-												<option>Expiry Date Month*</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-												<option value="6">6</option>
-											</select>
-											<input type="text" placeholder="Expiry Date Month*" required><i></i>
-										</div>
-										<div class="dropdown this">
-											<select>
-												<option>Expiry Date Year*</option>
-												<option value="2014">2014</option>
-												<option value="2015">2015</option>
-												<option value="2016">2016</option>
-												<option value="2017">2017</option>
-												<option value="2018">2018</option>
-												<option value="2019">2019</option>
-											</select>
-											<input class="slct" type="text" placeholder="Expiry Date Year*" required><i></i>
-										</div>
-										<input type="text" placeholder="CVV2 Security Code*" required>
-										<a href="#">What is this?</a>
-										<input class="long" type="text" placeholder="Card Holder Name*" required>
-										<input type="text" placeholder="Billing Address*" required>
-										<input class="this" type="text" placeholder="City*" required>
-										<input type="text" placeholder="Province/State*" required>
-										<input class="this" type="text" placeholder="Postal Code/ZIP*" required>
-							</div>
+									<input class="long" type="text" placeholder="First Name*" required>	
+									<input class="long" type="text" placeholder="Last Name*" required>
+									<input class="long" type="text" placeholder="Phone Number*" required>
+									<input class="long" type="text" placeholder="Street Address*" required>
+									<input class="long" type="text" placeholder="Street Address 2">
+									<input type="text" placeholder="State/Province*" required>
+									<input class="this" type="text" placeholder="Postal Code*" required>
+									<textarea placeholder="Shipping Notes"></textarea>
+								</div>
 							<div class="data__checkbox">
-								<label class="checkbox">
-									<input type="checkbox" name="choice" value="Express">
-									<span class="checkbox__title">I have read and accept the <a href="#">terms of purchase</a> and <a href="#">privacy policy</a></span>
-								</label>
-								<p>*Required field</p>
+									<label class="checkbox">
+										<input type="checkbox" name="choice" value="Express">
+										<span class="checkbox__title">I have read and accept the <a href="#">terms of purchase</a> and <a href="#">privacy policy</a></span>
+									</label>
+									<p>*Required field</p>
 							</div>
-							</form>
+						</form>
 						</div>
 						<!-- end data__left -->
 						<!-- begin data__right  -->
@@ -246,6 +191,12 @@
 									<td class="medium">3279.93 CAD</td>
 								</tr>
 							</table>
+							<ul>
+								<li>Card Info:</li>
+								<li>Card Holder: Jason Smith</li>
+								<li>822 Richmond St W</li>
+								<li>Visa: ****0054</li>
+							</ul>
 						</div>
 						<!-- end data__right -->
 					</div>

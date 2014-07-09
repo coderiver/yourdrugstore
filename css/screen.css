@@ -171,27 +171,39 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 @media only screen and (max-width: 580px) { .chpay__numbers { float: none; margin: 20px auto 0; width: 230px; } }
 .chpay__numbers li { float: left; display: block; }
 .chpay__numbers .one { background: url("../img/num.png") no-repeat 0 0; width: 91px; height: 48px; }
+.chpay__numbers .one.inshadow { background: url("../img/num1.png") no-repeat 0 0; width: 90px; height: 48px; }
 .chpay__numbers .two { background: url("../img/num2.png") no-repeat 0 0; width: 89px; height: 48px; }
+.chpay__numbers .two.active { background: url("../img/num4.png") no-repeat 0 0; width: 90px; height: 48px; }
 .chpay__numbers .three { background: url("../img/num3.png") no-repeat 0 0; width: 50px; height: 48px; }
 
 .paymentinfo { margin-bottom: 50px; }
 
 .paymentinfo__table { width: 50%; color: #254680; }
+.paymentinfo__table.shipping { width: 100%; font-size: 15px; }
+.paymentinfo__table.shipping a { font-size: 15px; }
+.paymentinfo__table.shipping .reg { font-family: "Titillium-Regular", Arial, sans-serif; }
 @media only screen and (max-width: 685px) { .paymentinfo__table { margin: 0 auto; width: 80%; } }
 .paymentinfo__table a { font-family: "Titillium-Semibold", Arial, sans-serif; font-size: 16px; color: #254680; }
 .paymentinfo__table a:hover { text-decoration: none; }
-.paymentinfo__table .paymentinfo__name { font-family: "Titillium-Bold", Arial, sans-serif; }
 .paymentinfo__table td { padding-right: 20px; min-width: 100px; }
 .paymentinfo__table .ifradio { padding-right: 10px; min-width: 15px; }
+.paymentinfo__table .paymentinfo__name { font-family: "Titillium-Bold", Arial, sans-serif; }
 
 .data { margin-bottom: 35px; *zoom: 1; }
 .data:after { content: " "; display: table; clear: both; }
 
-.data__left { width: 500px; float: left; }
+.data__shipping { margin: -20px 0 35px 0; }
+.data__shipping .radio__title { padding: 0 0 5px 20px; }
+.data__shipping .radio__title.version:before, .data__shipping .radio__title.version:after { left: 0; top: 8px; }
+.data__shipping .info { font-family: "Titillium-Semibold", Arial, sans-serif; }
+
+.data__left { width: 500px; float: left; color: #254680; }
 @media only screen and (max-width: 790px) { .data__left { padding-left: 20px; } }
 @media only screen and (max-width: 685px) { .data__left { float: none; text-align: center; padding-left: 0; width: 100%; } }
 .data__left a { color: #254680; }
 .data__left a:hover { text-decoration: none; }
+
+.data__text { padding-bottom: 10px; margin-bottom: 30px; border-bottom: 1px solid #bdc7d9; }
 
 .data__table { margin-bottom: 20px; width: 71.875%; }
 @media only screen and (max-width: 685px) { .data__table { margin: 0 auto 20px; } }
@@ -199,31 +211,32 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .data__table .radio__title.version { position: static; }
 .data__table .radio__title.version:before, .data__table .radio__title.version:after { margin-left: -7.5px; }
 
-.data__fieldset { width: 500px; margin-bottom: 15px; font-size: 0; }
+.data__fieldset { width: 500px; margin-bottom: 15px; font-size: 0; position: relative; }
 @media only screen and (max-width: 685px) { .data__fieldset { width: 100%; } }
-.data__fieldset input { font-size: 0; width: 48%; min-width: 200px; height: 50px; margin: 0 15px 15px 0; padding-left: 20px; border: 1px solid #134a8e; color: #254680; display: inline-block; font-size: 17px; font-family: "Titillium-Regular", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.data__fieldset input:-moz-placeholder, .data__fieldset input::-moz-placeholder { color: #254680; opacity: 1; }
-.data__fieldset input::-webkit-input-placeholder { color: #254680; }
-@media only screen and (max-width: 415px) { .data__fieldset input { margin-right: 0; } }
-.data__fieldset input.this { margin-right: 0; }
+.data__fieldset input, .data__fieldset textarea { border: 1px solid #134a8e; color: #254680; font-size: 17px; padding-left: 20px; font-family: "Titillium-Regular", Arial, sans-serif; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.data__fieldset input:-moz-placeholder, .data__fieldset input::-moz-placeholder, .data__fieldset textarea:-moz-placeholder, .data__fieldset textarea::-moz-placeholder { color: #254680; opacity: 1; }
+.data__fieldset input::-webkit-input-placeholder, .data__fieldset textarea::-webkit-input-placeholder { color: #254680; }
+.data__fieldset input, .data__fieldset .dropdown { width: 48%; min-width: 200px; height: 50px; margin: 0 15px 15px 0; display: inline-block; }
+@media only screen and (max-width: 415px) { .data__fieldset input, .data__fieldset .dropdown { margin-right: 0; } }
+.data__fieldset input.this, .data__fieldset .dropdown.this { margin-right: 0; }
+.data__fieldset textarea { width: 99%; height: 195px; padding-top: 20px; resize: none; }
 .data__fieldset .long { width: 99%; margin-right: 0; }
 .data__fieldset a { font-size: 13px; }
 @media only screen and (max-width: 790px) { .data__fieldset a { display: block; width: 240px; margin-bottom: 20px; text-align: center; } }
 @media only screen and (max-width: 685px) { .data__fieldset a { width: 100%; } }
-.data__fieldset .dropdown { display: inline-block; position: relative; width: 48%; min-width: 200px; height: 50px; margin: 0 15px 15px 0; }
-@media only screen and (max-width: 415px) { .data__fieldset .dropdown { margin-right: 0; } }
-.data__fieldset .dropdown.this { margin-right: 0; }
 .data__fieldset .dropdown input { width: 100%; }
 .data__fieldset .dropdown select { opacity: 0; position: absolute; width: 100%; height: 50px; z-index: 3; cursor: pointer; }
 .data__fieldset .dropdown i { position: absolute; right: 20px; bottom: 20px; background: url('../img/icons-s489e5e42c0.png') 0 -337px no-repeat; width: 18px; height: 9px; }
 
-.data__checkbox { font-size: 14px; color: #254680; font-family: "Titillium-Regular", Arial, sans-serif; }
+.data__checkbox { font-size: 14px; font-family: "Titillium-Regular", Arial, sans-serif; }
 .data__checkbox input { margin-right: 15px; }
 .data__checkbox p { margin-top: 15px; }
 
 .data__right { float: right; width: 32%; text-align: right; color: #254680; }
-@media only screen and (max-width: 780px) { .data__right { width: 35%; } }
+@media only screen and (max-width: 780px) { .data__right { width: 35%; padding-right: 20px; } }
 @media only screen and (max-width: 685px) { .data__right { float: none; width: 50%; margin: 35px auto 0; text-align: left; } }
+@media only screen and (max-width: 400px) { .data__right { width: 75%; } }
+.data__right ul { font-size: 15px; margin: 55px 10px 0 0; }
 
 .data__title, .data__total { min-width: 244px; }
 

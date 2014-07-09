@@ -444,7 +444,7 @@ body
 			padding-bottom: 25px 
 			border-bottom: 1px solid #89a4c6
 			
-//PAGE CHECKOUT PAYMENT
+//PAGES CHECKOUT PAYMENT AND SHIPPING
 .chpay
 	margin-bottom: 60px
 	border-bottom: 1px solid #bdc7d9
@@ -471,8 +471,12 @@ body
 		display: block 
 	.one
 		+png(num)
+		&.inshadow
+			+png(num1)
 	.two
 		+png(num2)
+		&.active
+			+png(num4)
 	.three
 		+png(num3)	
 
@@ -482,6 +486,13 @@ body
 .paymentinfo__table	
 	width: 50%	
 	color: #254680
+	&.shipping
+		width: 100%
+		font-size: 15px  
+		a
+			font-size: 15px
+		.reg
+			+treg	 
 	+rt(685)
 		margin: 0 auto 
 		width: 80% 
@@ -491,22 +502,35 @@ body
 		color: #254680
 		&:hover
 			text-decoration: none 
-	.paymentinfo__name
-		+tbold
 	td
 		padding-right: 20px 
 		min-width: 100px
 	.ifradio
 		padding-right: 10px 
-		min-width: 15px 			
+		min-width: 15px 
+	.paymentinfo__name
+		+tbold				
 
 .data
 	margin-bottom: 35px
 	+clr
 
+.data__shipping
+	margin: -20px 0 35px 0
+	.radio__title
+		padding: 0 0 5px 20px 
+		&.version
+			&:before,
+			&:after
+				left: 0
+				top: 8px
+	.info
+		+tsemibold
+
 .data__left
 	width: 500px
 	float: left
+	color: #254680 
 	+rt(790)
 		padding-left: 20px
 	+rt(685)
@@ -515,9 +539,14 @@ body
 		padding-left: 0 
 		width: 100%
 	a
-		color: #254680
+		color: #254680 
 		&:hover
 			text-decoration: none 
+
+.data__text
+	padding-bottom: 10px
+	margin-bottom: 30px
+	border-bottom: 1px solid #bdc7d9
 	
 .data__table
 	margin-bottom: 20px  
@@ -540,26 +569,32 @@ body
 	width: 500px
 	margin-bottom: 15px
 	font-size: 0
+	position: relative
 	+rt(685)
-		width: 100% 		 
-	input
-		font-size: 0 
+		width: 100% 
+	input, textarea
+		border: 1px solid #134a8e
+		color: #254680 
+		font-size: 17px 
+		padding-left: 20px
+		+treg
+		+box 
+		+placeholder-color(#254680)		
+	input, .dropdown
 		width: percentage(240px/500px)
 		min-width: 200px
 		height: 50px
-		margin: 0 15px 15px 0
-		padding-left: 20px
-		border: 1px solid #134a8e
-		color: #254680
-		display: inline-block	
-		font-size: 17px 
-		+placeholder-color(#254680)		
-		+treg
-		+box
+		margin: 0 15px 15px 0		
+		display: inline-block
 		+rt(415)
 			margin-right: 0 
 		&.this
-			margin-right: 0 
+			margin-right: 0 		 
+	textarea
+		width: 99%
+		height: 195px 
+		padding-top: 20px
+		resize: none			
 	.long
 		width: 99%
 		margin-right: 0	
@@ -573,16 +608,6 @@ body
 		+rt(685)
 			width: 100%	 	
 	.dropdown
-		display: inline-block
-		position: relative
-		width: percentage(240px/500px)
-		min-width: 200px
-		height: 50px
-		margin: 0 15px 15px 0
-		+rt(415)
-			margin-right: 0 
-		&.this
-			margin-right: 0 
 		input
 			width: 100%
 		select
@@ -600,7 +625,6 @@ body
 
 .data__checkbox
 	font-size: 14px 
-	color: #254680 
 	+treg
 	input
 		margin-right: 15px 
@@ -614,11 +638,17 @@ body
 	color: #254680 
 	+rt(780)
 		width: 35% 	
+		padding-right: 20px 
 	+rt(685)
 		float: none	
 		width: 50% 
 		margin: 35px auto 0
-		text-align: left 
+		text-align: left  	
+	+rt(400)
+		width: 75%	
+	ul
+		font-size: 15px
+		margin: 55px 10px 0 0 	
 
 .data__title, .data__total
 	min-width: 244px
