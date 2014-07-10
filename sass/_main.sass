@@ -92,12 +92,13 @@
 	
 .medic__wrap
 	padding: 85px 0 75px 0
-	p
-		margin-bottom: 60px
-		color: #fff 
-		font-size: 29px 
-		text-align: center
-		+klight 
+	color: $white 
+	
+.medic__title
+	margin-bottom: 60px
+	font-size: 29px 
+	text-align: center
+	+klight 
 		 
 .medic__table
 	text-align: center 
@@ -187,7 +188,7 @@
 	+treg
 	input
 		margin-right: 5px 
-		opacity: 0
+		+opacity(0)
 		z-index: 3
 		&:checked
 			+ .checkn

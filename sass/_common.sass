@@ -80,6 +80,9 @@ body
 	
 =kbold
 	font-family: "KlinicSlab-Bold", Arial, sans-serif 
+	
+$navy: #254680	
+$white: #fff
 
 // common blocks      
 .out
@@ -88,11 +91,12 @@ body
 //PAGE SIGN IN
 .sign
 	text-align: center 
-	font-size: 15px 
+	font-size: 15px
 	+treg
 	p
 		margin-bottom: 0 
-		font-size: 24px 
+		font-size: 24px
+		+klight 
 	.sign__text
 		margin-bottom: 60px 
 	input
@@ -103,15 +107,16 @@ body
 		height: 50px
 		font-size: 16px
 		color: #5b5b5b
-		padding-left: 25px  
+		padding-left: 25px
+		line-height: 1.2 
 		+placeholder-color(#5b5b5b)
 	a
-		color: #FFF 	
+		color: $white	
 		display: block 
 		&:hover
 			text-decoration: none 
 	span			
-		color: #FFF 
+		color: $white
 		display: inline-block
 	.ask
 		margin-top: 40px 	
@@ -124,14 +129,14 @@ body
 	min-width: 195px 
 	height: 55px
 	background: none
-	border: 2px solid #fff
+	border: 2px solid $white
 	text-transform: uppercase  
-	color: #fff 
+	color: $white
 	display: block 
 	margin: 0 auto 
 	&:hover
-		background: #254680 
-		border-color: #254680 
+		background: $navy 
+		border-color: $navy 
 
 //PAGE CREATE ACCOUNT
 .acc	
@@ -186,7 +191,7 @@ body
 	.remove
 		cursor: pointer				
 	.blue, .srt, a, .deal
-		color: #254680 	
+		color: $navy 	
 	.srt
 		position: relative
 		cursor: pointer
@@ -214,12 +219,12 @@ body
 		width: 70px
 		height: 40px
 		z-index: 2	
-		opacity: 0 
+		+opacity(0) 
 	.forselect
 		position: relative 	
 		span
 			font-size: 16px 
-			border: 1px solid #254680
+			border: 1px solid $navy
 			width: 70px
 			height: 40px
 			display: inline-block 
@@ -248,7 +253,7 @@ body
 	+treg
 
 .details__title
-	color: #254680
+	color: $navy
 	border-bottom: 1px solid #bdc7d9  
 	border-top: 1px solid #bdc7d9 
 	padding: 30px 0 
@@ -294,7 +299,7 @@ body
 			float: none
 	a
 		text-decoration: none 
-		color: #254680
+		color: $navy
 		padding-right: 5px
 	.current
 		color: #2A8FF1 
@@ -352,14 +357,14 @@ body
 		font-size: 18px 
 	.naming
 		font-size: 30px
-		color: #254680 
+		color: $navy 
 		line-height: 1
 		+kbook 
 	.b
 		color: #2A8FF1 
 		font-size: 15px 
 	.add	
-		color: #254680
+		color: $navy
 		text-decoration: none 
 		text-transform: uppercase 
 		display: inline-block 
@@ -376,7 +381,7 @@ body
 		margin: 0 auto 	
 		float: none 
 	.rightside__title
-		color: #254680
+		color: $navy
 		font-size: 36px 
 		margin-bottom: 35px 
 		position: relative
@@ -393,8 +398,8 @@ body
 		right: 0
 		bottom: 0
 		text-transform: uppercase 
-		color: #fff   	
-		background: #254680 
+		color: $white  	
+		background: $navy 
 		font-size: 16px 
 		+tsemibold
 		+rt(930)
@@ -407,7 +412,7 @@ body
 			width: 100%
 		td
 			vertical-align: top	 
-			color: #254680 
+			color: $navy 
 			+rt(685)
 				padding-right: 15px				 
 			img
@@ -430,13 +435,13 @@ body
 				width: 105px
 				height: 50px
 		.quantity
-			color: #FFF
-			background: #254680  
+			color: $white
+			background: $navy  
 		.price
 			color: #2A8FF1 
 			background: #D4E9FC
 	.rightside__text
-		color: #254680 	
+		color: $navy 	
 		.b
 			font-size: 24px 
 			margin-bottom: 35px 
@@ -450,7 +455,7 @@ body
 	border-bottom: 1px solid #bdc7d9
 	border-top: 1px solid #bdc7d9
 	padding: 20px 0
-	color: #254680 
+	color: $navy 
 	+clr
 
 .chpay__title
@@ -479,13 +484,15 @@ body
 			+png(num4)
 	.three
 		+png(num3)	
+		&.active
+			+png(num5)
 
 .paymentinfo
 	margin-bottom: 50px 		
 
 .paymentinfo__table	
 	width: 50%	
-	color: #254680
+	color: $navy
 	&.shipping
 		width: 100%
 		font-size: 15px  
@@ -499,7 +506,7 @@ body
 	a
 		+tsemibold
 		font-size: 16px 
-		color: #254680
+		color: $navy
 		&:hover
 			text-decoration: none 
 	td
@@ -530,7 +537,7 @@ body
 .data__left
 	width: 500px
 	float: left
-	color: #254680 
+	color: $navy 
 	+rt(790)
 		padding-left: 20px
 	+rt(685)
@@ -539,7 +546,7 @@ body
 		padding-left: 0 
 		width: 100%
 	a
-		color: #254680 
+		color: $navy 
 		&:hover
 			text-decoration: none 
 
@@ -574,12 +581,12 @@ body
 		width: 100% 
 	input, textarea
 		border: 1px solid #134a8e
-		color: #254680 
+		color: $navy 
 		font-size: 17px 
 		padding-left: 20px
 		+treg
 		+box 
-		+placeholder-color(#254680)		
+		+placeholder-color($navy)		
 	input, .dropdown
 		width: percentage(240px/500px)
 		min-width: 200px
@@ -608,10 +615,11 @@ body
 		+rt(685)
 			width: 100%	 	
 	.dropdown
+		position: relative
 		input
 			width: 100%
 		select
-			opacity: 0
+			+opacity(0)
 			position: absolute
 			width: 100%
 			height: 50px
@@ -630,12 +638,54 @@ body
 		margin-right: 15px 
 	p
 		margin-top: 15px 	
+
+.data__fileupload
+	width: percentage(490px/500px)
+	height: 50px
+	position: relative
+	overflow: hidden
+	background: $white
+	border: 1px solid $navy
+	cursor: pointer
+	margin: 30px 0 40px 0 
+	padding: 10px 0 0 20px 
+	+box
+	+rt(685)
+		text-align: left 
+		margin: 30px auto 40px 	
+	&:after
+		position: absolute
+		content: ""
+		top: 20px
+		right: 20px
+		+s(drop)
+		+rotate(270)
+	input
+		position: absolute
+		cursor: pointer
+		top: 0
+		right: 0
+		width: 490px
+		height: 50px
+		+opacity(0)
+
+.data__info
+	margin-top: 40px
+	.medium
+		+tbold
+	ul
+		width: percentage(225px/500px)
+		min-width: 225px
+		padding-left: 20px  
+		display: inline-block
+		+rt(556)
+			padding-bottom: 20px 
 		
 .data__right
 	float: right
 	width: 32%	
 	text-align: right
-	color: #254680 
+	color: $navy 
 	+rt(780)
 		width: 35% 	
 		padding-right: 20px 

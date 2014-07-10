@@ -6,10 +6,10 @@
 	input 
 		width: 11px
 		height: 11px 
-		z-index: 2
-		opacity: 0
 		position: absolute
 		bottom: 20px
+		z-index: 2		
+		+opacity(0)
 		&:checked
 			+ .radio__title
 				&:after
@@ -98,17 +98,26 @@
 		background: #254680
 		color: #fff 
 		float: right
+		position: relative
 		+rt(505)
 			float: none
 			display: inline-block
 			margin-top: 20px
+	&.checkinfo
+		.complete
+			&:after
+				position: absolute
+				content: ""
+				top: 19px
+				right: 20px 
+				+s(compl)	 		
 			
 //CHECKBOX MODIFICATION
 .checkbox 
 	display: inline-block
 	position: relative
 	input
-		opacity: 0
+		+opacity(0)
 		&:checked
 			+ .checkbox__title
 				&:after
